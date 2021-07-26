@@ -1,0 +1,56 @@
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\App.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\MainWindow.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Scanner.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.ApplicationModel.Resources.Projection.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.UI.Windowing.Projection.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.WinUI.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\runtimes\lib\native\arm64\Microsoft.ProjectReunion.Bootstrap.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\runtimes\lib\native\arm64\Microsoft.ProjectReunion.Bootstrap.pdb
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\runtimes\lib\native\x64\Microsoft.ProjectReunion.Bootstrap.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\runtimes\lib\native\x64\Microsoft.ProjectReunion.Bootstrap.pdb
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\runtimes\lib\native\x86\Microsoft.ProjectReunion.Bootstrap.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\runtimes\lib\native\x86\Microsoft.ProjectReunion.Bootstrap.pdb
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.Windows.SDK.NET.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\WinRT.Runtime.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.Internal.FrameworkUdk.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.ui.xaml.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Cobalt.deps.json
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Cobalt.runtimeconfig.dev.json
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\App.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\MainWindow.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Scanner.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Cobalt.exe
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Microsoft.ApplicationModel.Resources.Projection.pdb
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Cobalt.runtimeconfig.json
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Cobalt.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Cobalt.pdb
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\resources.pri
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\AppxManifest.xml
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt (Package).build.appxrecipe
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Microsoft.Internal.FrameworkUdk.dll
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Microsoft.ui.xaml.dll
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\Cobalt (Package).wapproj.AssemblyReference.cache
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\Cobalt (Package).wapproj.CoreCompileInputs.cache
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\Cobalt (Package).wapproj.CopyComplete
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\Cobalt.pri.xml
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\priconfig.xml
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\priconfig.xml.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\unfiltered.layout.resfiles
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\unfiltered.layout.resfiles.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\filtered.layout.resfiles
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\filtered.layout.resfiles.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\excluded.layout.resfiles
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\excluded.layout.resfiles.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\resources.resfiles
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\resources.resfiles.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\pri.resfiles
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\pri.resfiles.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\qualifiers.txt
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\qualifiers.txt.intermediate
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\ProjectArchitectures.txt
+A:\Repositories\Cobalt\Cobalt (Package)\obj\x64\Debug\Cobalt (Package).wapproj.LastBuild.txt
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Library\Cloud\Main.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Library\Cloud\Main.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Library\Cloud\LibraryPage.xbf
+A:\Repositories\Cobalt\Cobalt (Package)\bin\x64\Debug\Cobalt\Library\Cloud\LibraryPage.xbf

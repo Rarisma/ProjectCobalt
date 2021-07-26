@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KOjDeCEGWMTlceyD5FBKsN+5ogltXAFVdqATptxf2h6QICFp6qcSJfDbV47LjTZf3JsQQ7NgJmgktxT7lo+0Nw==",
+  "success": true,
+  "projectFilePath": "A:\\Repositories\\Cobalt\\Cobalt (Package)\\Cobalt (Package).wapproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion\\0.8.0-preview\\microsoft.projectreunion.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.dwrite\\0.8.0-preview\\microsoft.projectreunion.dwrite.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.foundation\\0.8.0-preview\\microsoft.projectreunion.foundation.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.interactiveexperiences\\0.8.0-preview\\microsoft.projectreunion.interactiveexperiences.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.winui\\0.8.0-preview\\microsoft.projectreunion.winui.0.8.0-preview.nupkg.sha512"
+  ],
+  "logs": []
+}

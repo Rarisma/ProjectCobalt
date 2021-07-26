@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "Cobalt (Package)", "Cobalt (Package)\Cobalt (Package).wapproj", "{E718A671-BF2E-4A40-B473-B0E28A07343A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobalt", "Cobalt\Cobalt.csproj", "{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|arm64.ActiveCfg = Debug|arm64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|arm64.Build.0 = Debug|arm64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|arm64.Deploy.0 = Debug|arm64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|x64.ActiveCfg = Debug|x64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|x64.Build.0 = Debug|x64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|x64.Deploy.0 = Debug|x64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|x86.ActiveCfg = Debug|x86
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|x86.Build.0 = Debug|x86
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Debug|x86.Deploy.0 = Debug|x86
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|arm64.ActiveCfg = Release|arm64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|arm64.Build.0 = Release|arm64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|arm64.Deploy.0 = Release|arm64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|x64.ActiveCfg = Release|x64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|x64.Build.0 = Release|x64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|x64.Deploy.0 = Release|x64
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|x86.ActiveCfg = Release|x86
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|x86.Build.0 = Release|x86
+		{E718A671-BF2E-4A40-B473-B0E28A07343A}.Release|x86.Deploy.0 = Release|x86
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Debug|arm64.ActiveCfg = Debug|arm64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Debug|arm64.Build.0 = Debug|arm64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Debug|x64.ActiveCfg = Debug|x64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Debug|x64.Build.0 = Debug|x64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Debug|x86.ActiveCfg = Debug|x86
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Debug|x86.Build.0 = Debug|x86
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Release|arm64.ActiveCfg = Release|arm64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Release|arm64.Build.0 = Release|arm64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Release|x64.ActiveCfg = Release|x64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Release|x64.Build.0 = Release|x64
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Release|x86.ActiveCfg = Release|x86
+		{ACC0F2DB-DB15-455C-A89E-DF7ACFF00560}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BE4AD83-8AE2-458B-85EB-59CA85610193}
+	EndGlobalSection
+EndGlobal
