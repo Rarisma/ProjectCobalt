@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pFOWh3tXJJutz2CSJbYKSJNs7HaPi7Y+WNBPL9TR6MjJ44wLjdt6ENzGQ3Eu+9tUyJSG04ftx4Muc3KXrrghnw==",
+  "dgSpecHash": "yCsrwHAbhELaBOjmJKVpngcT04YUjVDM8YoS2Uxg4896GMShquiCdzc4l62kDQWClwz21NKjz0r+xPNthN08HQ==",
   "success": true,
-  "projectFilePath": "A:\\Repositories\\Cobalt\\Cobalt\\Cobalt.csproj",
+  "projectFilePath": "A:\\Repositories\\ProjectCobalt\\Cobalt\\Cobalt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion\\0.8.0-preview\\microsoft.projectreunion.0.8.0-preview.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.dwrite\\0.8.0-preview\\microsoft.projectreunion.dwrite.0.8.0-preview.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Repositories\\Cobalt\\Cobalt (Package)\\Cobalt (Package).wapproj": {}
+    "A:\\Repositories\\ProjectCobalt\\Cobalt (Package)\\Cobalt (Package).wapproj": {}
   },
   "projects": {
-    "A:\\Repositories\\Cobalt\\Cobalt (Package)\\Cobalt (Package).wapproj": {
+    "A:\\Repositories\\ProjectCobalt\\Cobalt (Package)\\Cobalt (Package).wapproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Repositories\\Cobalt\\Cobalt (Package)\\Cobalt (Package).wapproj",
+        "projectUniqueName": "A:\\Repositories\\ProjectCobalt\\Cobalt (Package)\\Cobalt (Package).wapproj",
         "projectName": "Cobalt (Package)",
-        "projectPath": "A:\\Repositories\\Cobalt\\Cobalt (Package)\\Cobalt (Package).wapproj",
+        "projectPath": "A:\\Repositories\\ProjectCobalt\\Cobalt (Package)\\Cobalt (Package).wapproj",
         "packagesPath": "C:\\Users\\Rarisma\\.nuget\\packages\\",
-        "outputPath": "A:\\Repositories\\Cobalt\\Cobalt (Package)\\obj\\",
+        "outputPath": "A:\\Repositories\\ProjectCobalt\\Cobalt (Package)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "uap10.0.17763": {
             "targetAlias": "net451",
             "projectReferences": {
-              "A:\\Repositories\\Cobalt\\Cobalt\\Cobalt.csproj": {
-                "projectPath": "A:\\Repositories\\Cobalt\\Cobalt\\Cobalt.csproj"
+              "A:\\Repositories\\ProjectCobalt\\Cobalt\\Cobalt.csproj": {
+                "projectPath": "A:\\Repositories\\ProjectCobalt\\Cobalt\\Cobalt.csproj"
               }
             }
           }
@@ -99,14 +99,14 @@
         }
       }
     },
-    "A:\\Repositories\\Cobalt\\Cobalt\\Cobalt.csproj": {
+    "A:\\Repositories\\ProjectCobalt\\Cobalt\\Cobalt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Repositories\\Cobalt\\Cobalt\\Cobalt.csproj",
+        "projectUniqueName": "A:\\Repositories\\ProjectCobalt\\Cobalt\\Cobalt.csproj",
         "projectName": "Cobalt",
-        "projectPath": "A:\\Repositories\\Cobalt\\Cobalt\\Cobalt.csproj",
+        "projectPath": "A:\\Repositories\\ProjectCobalt\\Cobalt\\Cobalt.csproj",
         "packagesPath": "C:\\Users\\Rarisma\\.nuget\\packages\\",
-        "outputPath": "A:\\Repositories\\Cobalt\\Cobalt\\obj\\",
+        "outputPath": "A:\\Repositories\\ProjectCobalt\\Cobalt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
