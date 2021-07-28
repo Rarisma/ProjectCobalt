@@ -984,25 +984,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ben\\.nuget\\packages\\": {},
-    "D:\\VisualStudio\\SharedComponents\\NuGetPackages": {}
+    "C:\\Users\\Rarisma\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ben\\Documents\\GitHub\\ProjectCobalt\\ProjectCobalt (Package)\\ProjectCobalt (Package).wapproj",
+      "projectUniqueName": "A:\\Repositories\\ProjectCobalt\\ProjectCobalt (Package)\\ProjectCobalt (Package).wapproj",
       "projectName": "ProjectCobalt (Package)",
-      "projectPath": "C:\\Users\\Ben\\Documents\\GitHub\\ProjectCobalt\\ProjectCobalt (Package)\\ProjectCobalt (Package).wapproj",
-      "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ben\\Documents\\GitHub\\ProjectCobalt\\ProjectCobalt (Package)\\obj\\",
+      "projectPath": "A:\\Repositories\\ProjectCobalt\\ProjectCobalt (Package)\\ProjectCobalt (Package).wapproj",
+      "packagesPath": "C:\\Users\\Rarisma\\.nuget\\packages\\",
+      "outputPath": "A:\\Repositories\\ProjectCobalt\\ProjectCobalt (Package)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\VisualStudio\\SharedComponents\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rarisma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.17763"
@@ -1015,8 +1018,8 @@
         "uap10.0.17763": {
           "targetAlias": "net451",
           "projectReferences": {
-            "C:\\Users\\Ben\\Documents\\GitHub\\ProjectCobalt\\ProjectCobalt\\ProjectCobalt.csproj": {
-              "projectPath": "C:\\Users\\Ben\\Documents\\GitHub\\ProjectCobalt\\ProjectCobalt\\ProjectCobalt.csproj"
+            "A:\\Repositories\\ProjectCobalt\\ProjectCobalt\\ProjectCobalt.csproj": {
+              "projectPath": "A:\\Repositories\\ProjectCobalt\\ProjectCobalt\\ProjectCobalt.csproj"
             }
           }
         }
@@ -1057,7 +1060,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

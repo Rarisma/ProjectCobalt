@@ -9,6 +9,20 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
+    <Content Remove="Resources\Ratings\1.png" />
+    <Content Remove="Resources\Ratings\10.png" />
+    <Content Remove="Resources\Ratings\11.png" />
+    <Content Remove="Resources\Ratings\12.png" />
+    <Content Remove="Resources\Ratings\2.png" />
+    <Content Remove="Resources\Ratings\3.png" />
+    <Content Remove="Resources\Ratings\4.png" />
+    <Content Remove="Resources\Ratings\5.png" />
+    <Content Remove="Resources\Ratings\6.png" />
+    <Content Remove="Resources\Ratings\7.png" />
+    <Content Remove="Resources\Ratings\8.png" />
+    <Content Remove="Resources\Ratings\9.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="CobaltUI\Scanner.xaml" />
     <None Remove="CondensedUI\Library\LibraryPage.xaml" />
     <None Remove="CondensedUI\Library\Main.xaml" />
@@ -39,10 +53,6 @@
     <Page Update="CondensedUI\Library\Main.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Assets\" />
   </ItemGroup>
 
   <ItemGroup>

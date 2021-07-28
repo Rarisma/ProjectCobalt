@@ -16,8 +16,10 @@ namespace ProjectCobalt
         public static Frame Display;
         public static List<List<string>> Games = new();
         public static bool RarismaMode = false; //Enable to download the preloaded library, this isn't useful if you arent rarisma
-        public static bool NitroMode = true; //Making UIs possible :)
+        public static bool NitroMode = false;   //Forces RadicalUI to load instead of CondensedUI
         public static bool DownloadDB = true;   //Set to false to force Cobalt to make database manually, this will take a long time and a path has to be provided
+
+        public static string Resources = AppDomain.CurrentDomain.BaseDirectory + "//Resources//";
 
         public static void LoadLibrary()
         {
@@ -31,10 +33,10 @@ namespace ProjectCobalt
 
         public static void LoadDB(string DatabasePath)
         {
-            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\Database.db"))
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\Games.db"))
             {
                 System.Diagnostics.Debug.WriteLine("Preloaded DB found, in executable root.\nStarting to load it.");
-                GameSet.AddRange(File.ReadLines(AppDomain.CurrentDomain.BaseDirectory + "\\Database.db"));
+                GameSet.AddRange(File.ReadLines(AppDomain.CurrentDomain.BaseDirectory + "\\Games.db"));
                 System.Diagnostics.Debug.WriteLine("DB loaded, contains " + GameSet.Count + " entries");
 
             }
@@ -58,6 +60,7 @@ namespace ProjectCobalt
             }
 
             int complete = 0;
+            string FinalDB = "";
             Parallel.ForEach(GameSet, Game =>
             {
                 System.Diagnostics.Debug.WriteLine("Processing database (" + complete + " / " + GameSet.Count + ")");
@@ -80,8 +83,10 @@ namespace ProjectCobalt
                 platform = platform.Replace("<name>", "");
                 platform = platform.Replace("</name>", "");
                 Database.Add(new string[] { Name, Size, CRC, MD5, Sha1, Serial, platform });
+                FinalDB = FinalDB + Name + "\n" + CRC + "\n" + MD5 + "\n" + Sha1 + "\n" + Serial + "\n" + platform + "\n";
                 complete++;
             });
+            File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + "//CompiledDB.db", FinalDB);
         }
 
     }

@@ -14,13 +14,28 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <ListBox Name="SideBar" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" MaxHeight="1000" SelectionChanged="SelectedGameUpdate"/>
 
-        <StackPanel Grid.Row="0" Grid.Column="1">
-            <TextBlock Name="Name" Text="GAME TITLE NAME" FontSize="30"  Padding="20" FontFamily="Title.otf"/>
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <Border Height="20"/>
+            <TextBlock Name="Name" Text="GAME TITLE NAME" FontSize="30" FontFamily="Title.otf"/>
+            <Border Height="20"/>
             <TextBlock Name="Description" Text="DescriptionDescriptionDescriptionDescription" FontSize="20"/>
+            <Border Height="50"/>
+            <Grid Height="150" HorizontalAlignment="Left">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="100" MaxWidth="300"/>
+                    <ColumnDefinition MinWidth="100" MaxWidth="400"/>
+                    <ColumnDefinition MinWidth="100" MaxWidth="300"/>
+                    <ColumnDefinition MinWidth="100" MaxWidth="300"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="▶  PLAY" Grid.Column="0 " VerticalAlignment="Stretch" Height="100" Width="300" HorizontalContentAlignment="Center" Background="#60CF25"/>
+                <Image Name="Rating" Width="120" Height="120" Grid.Column="3" HorizontalAlignment="Center"/>
+                
+            </Grid>
         </StackPanel>
     </Grid>
 </Page>

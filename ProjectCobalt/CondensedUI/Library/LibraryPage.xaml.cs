@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,14 @@ namespace ProjectCobalt.CondensedUI.Library
             Game.RemoveAll(str => String.IsNullOrEmpty(str)); //Removes empty strings
 
             Description.Text = Game[3];
+
+            if (Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "//Resources//Age Ratings//") == false)
+            {
+                LibRarisma.Connectivity.DownloadFile("https://github.com/Rarisma/ProjectCobalt/blob/main/Resources/Ratings.zip?raw=true", Global.Resources + "//Age Ratings//", "Rating.zip", true);
+            }
+            Rating.Source = new BitmapImage(new Uri(Global.Resources + "//Age Ratings//" + Game[1].Replace("Age Rating: ", "") + ".png", UriKind.Relative));
+
+
         }
     }
 }
