@@ -31,7 +31,7 @@ namespace ProjectCobalt
 
             if (Global.DownloadDB) { LibRarisma.Connectivity.DownloadFile("https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Tools/PreloadedGames.db", AppDomain.CurrentDomain.BaseDirectory, "Games.db"); }
             if (Global.RarismaMode) { LibRarisma.Connectivity.DownloadFile("https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Tools/TestLibrary.db", AppDomain.CurrentDomain.BaseDirectory, "Library.db"); }
-
+            if (Global.NitroMode) { Global.Display.Content = new RadicalUI.Radical1();}
 
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\Library.db")) { Global.Display.Content = new CondensedUI.Library.Main(); }
             else { Global.Display.Content = new CobaltUI.Scanner(); }

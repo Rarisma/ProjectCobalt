@@ -5,6 +5,9 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="RadicalUI\Radical1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CondensedUI\Library\LibraryPage.xaml">
       <SubType>Designer</SubType>
     </Page>

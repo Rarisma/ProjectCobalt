@@ -15,7 +15,8 @@ namespace ProjectCobalt
         public static List<string> Platform = new();
         public static Frame Display;
         public static List<List<string>> Games = new();
-        public static bool RarismaMode = true; //Enable to download the preloaded library, this isn't useful if you arent rarisma
+        public static bool RarismaMode = false; //Enable to download the preloaded library, this isn't useful if you arent rarisma
+        public static bool NitroMode = true; //Making UIs possible :)
         public static bool DownloadDB = true;   //Set to false to force Cobalt to make database manually, this will take a long time and a path has to be provided
 
         public static void LoadLibrary()

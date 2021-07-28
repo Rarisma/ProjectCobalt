@@ -12,6 +12,7 @@
     <None Remove="CobaltUI\Scanner.xaml" />
     <None Remove="CondensedUI\Library\LibraryPage.xaml" />
     <None Remove="CondensedUI\Library\Main.xaml" />
+    <None Remove="RadicalUI\Radical1.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,5 +43,11 @@
 
   <ItemGroup>
     <Folder Include="Assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="RadicalUI\Radical1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>
