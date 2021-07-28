@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt %28Package%29\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-28T11:54:08.500</Modified>
+      <Modified>2021-07-28T12:30:03.217</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -48,27 +48,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>MainWindow.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\CobaltUI\Scanner.xbf">
       <PackagePath>CobaltUI\Scanner.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\CondensedUI\Library\LibraryPage.xbf">
       <PackagePath>CondensedUI\Library\LibraryPage.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\CondensedUI\Library\Main.xbf">
       <PackagePath>CondensedUI\Library\Main.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\RadicalUI\Radical1.xbf">
       <PackagePath>RadicalUI\Radical1.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.141</Modified>
+      <Modified>2021-07-28T12:30:01.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\Redist\Debug\x64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -166,31 +166,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\App.xbf">
       <PackagePath>ProjectCobalt\App.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\CobaltUI\Scanner.xbf">
       <PackagePath>ProjectCobalt\CobaltUI\Scanner.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\CondensedUI\Library\LibraryPage.xbf">
       <PackagePath>ProjectCobalt\CondensedUI\Library\LibraryPage.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\CondensedUI\Library\Main.xbf">
       <PackagePath>ProjectCobalt\CondensedUI\Library\Main.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>ProjectCobalt\MainWindow.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.140</Modified>
+      <Modified>2021-07-28T12:30:01.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\RadicalUI\Radical1.xbf">
       <PackagePath>ProjectCobalt\RadicalUI\Radical1.xbf</PackagePath>
-      <Modified>2021-07-28T11:54:06.141</Modified>
+      <Modified>2021-07-28T12:30:01.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\obj\x64\Debug\net5.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>ProjectCobalt\ProjectCobalt.exe</PackagePath>
-      <Modified>2021-07-28T11:54:06.393</Modified>
+      <Modified>2021-07-28T12:30:01.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\ProjectCobalt.runtimeconfig.json">
       <PackagePath>ProjectCobalt\ProjectCobalt.runtimeconfig.json</PackagePath>
@@ -198,7 +198,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ben\Documents\GitHub\ProjectCobalt\ProjectCobalt\bin\x64\Debug\net5.0-windows10.0.19041.0\ProjectCobalt.dll">
       <PackagePath>ProjectCobalt\ProjectCobalt.dll</PackagePath>
-      <Modified>2021-07-28T11:54:06.287</Modified>
+      <Modified>2021-07-28T12:30:01.854</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

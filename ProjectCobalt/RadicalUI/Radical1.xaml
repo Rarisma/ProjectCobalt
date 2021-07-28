@@ -17,6 +17,7 @@
             <ListBoxItem Content="Home"/>
             <ListBoxItem Content="Store"/>
             <ListBoxItem Content="Library"/>
+            <Border Height="100"/>
             <ListBoxItem Content="Downloads"/>
             <ListBoxItem Content="Settings"/>
         </ListBox>
