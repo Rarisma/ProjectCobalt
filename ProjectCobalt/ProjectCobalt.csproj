@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>ProjectCobalt</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;arm64</Platforms>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="CobaltUI\Scanner.xaml" />
+    <None Remove="CondensedUI\Library\LibraryPage.xaml" />
+    <None Remove="CondensedUI\Library\Main.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibRarisma" Version="2.0.2" />
+    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.0-preview" />
+    <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.0-preview" />
+    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.0-preview" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="CondensedUI\Library\LibraryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="CobaltUI\Scanner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="CondensedUI\Library\Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+</Project>

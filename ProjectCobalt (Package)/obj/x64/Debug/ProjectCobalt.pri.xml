@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="ProjectCobalt" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://ProjectCobalt/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainWindow.xbf" uri="ms-resource://ProjectCobalt/Files/MainWindow.xbf">
+				<Candidate type="Path">
+					<Value>MainWindow.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="CobaltUI">
+				<NamedResource name="Scanner.xbf" uri="ms-resource://ProjectCobalt/Files/CobaltUI/Scanner.xbf">
+					<Candidate type="Path">
+						<Value>CobaltUI\Scanner.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CondensedUI">
+				<ResourceMapSubtree name="Library">
+					<NamedResource name="LibraryPage.xbf" uri="ms-resource://ProjectCobalt/Files/CondensedUI/Library/LibraryPage.xbf">
+						<Candidate type="Path">
+							<Value>CondensedUI\Library\LibraryPage.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Main.xbf" uri="ms-resource://ProjectCobalt/Files/CondensedUI/Library/Main.xbf">
+						<Candidate type="Path">
+							<Value>CondensedUI\Library\Main.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
