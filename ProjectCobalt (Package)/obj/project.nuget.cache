@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "3ucOUppl28cbXwGSgcK6p+ifDK6qPQdseP2gNe2z7w5WkPUpBBKoSutyneH2jqwxARMM8OOR9T71aRGWWnkHKQ==",
+  "success": true,
+  "projectFilePath": "A:\\Repositories\\ProjectCobalt\\ProjectCobalt (Package)\\ProjectCobalt (Package).wapproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rarisma\\.nuget\\packages\\librarisma\\2.0.1\\librarisma.2.0.1.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion\\0.8.0-preview\\microsoft.projectreunion.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.dwrite\\0.8.0-preview\\microsoft.projectreunion.dwrite.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.foundation\\0.8.0-preview\\microsoft.projectreunion.foundation.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.interactiveexperiences\\0.8.0-preview\\microsoft.projectreunion.interactiveexperiences.0.8.0-preview.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.projectreunion.winui\\0.8.0-preview\\microsoft.projectreunion.winui.0.8.0-preview.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LibRarisma 2.0.1' was restored using 'net5.0-windows10.0.19041, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net5.0-windows10.0.17763, net6.0-windows10.0.17763, .NETFramework,Version=v4.6.1' instead of the project target framework 'UAP,Version=v10.0.17763'. This package may not be fully compatible with your project.",
+      "libraryId": "LibRarisma",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763"
+      ]
+    }
+  ]
+}
