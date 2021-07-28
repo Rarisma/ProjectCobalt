@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200" MaxWidth="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0">
+            <ListBoxItem Content="Home"/>
+            <ListBoxItem Content="Store"/>
+            <ListBoxItem Content="Library"/>
+            <ListBoxItem Content="Downloads"/>
+            <ListBoxItem Content="Settings"/>
+        </ListBox>
     </Grid>
 </Page>
