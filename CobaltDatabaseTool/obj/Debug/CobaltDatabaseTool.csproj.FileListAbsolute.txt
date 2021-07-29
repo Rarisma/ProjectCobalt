@@ -1,0 +1,12 @@
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\CobaltDatabaseTool\bin\Debug\CobaltDatabaseTool.exe
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\CobaltDatabaseTool\bin\Debug\CobaltDatabaseTool.pdb
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.csproj.AssemblyReference.cache
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.csproj.CoreCompileInputs.cache
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.exe
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.pdb
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\bin\Debug\CobaltDatabaseTool.exe
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\bin\Debug\CobaltDatabaseTool.pdb
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.csproj.AssemblyReference.cache
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.csproj.CoreCompileInputs.cache
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.exe
+A:\Repositories\ProjectCobalt\CobaltDatabaseTool\obj\Debug\CobaltDatabaseTool.pdb

@@ -1,4 +1,4 @@
-![ProjectCobalt](https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/CobaltLogoBlue.png)
+![ProjectCobalt](https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Resources/Branding/CobaltLogoBlue.png)
 A front end written in C# that aims to make emulation easier and quicker while putting all your games in one simple, small app
 
 
@@ -9,15 +9,14 @@ Project Cobalt is an unnamed front end written in C# and using the WinUI3 GUI Fr
 
 
 #### Compiling
-Download Visual Studio 2019 and configure it to be able to compile WinUI3 apps (Search WinUI3 Development Setup Guide for upto date results) and compile as normal, please note that as of writing WinUI3 cannot create unpackaged apps so you will have to compile the package project and install it. At some point in the future WinUI3 will be able to create unpackaged apps.
+Open your C# IDE of choice (Ideally Rider but VS2019 will do) and configure it to compile a standard Avalonia App.
 
 #### FAQ
-##### Why WinUI3
-Its new and shiny
-At somepoint though I will try and transition this project to a somthing more corssplatform if nesscary but MAUI isn't relased yet and I've worked with Avalonia before
+##### Why AvaloniaUI?
+Originally I intended to use WinUI3 however its a bit too new and for some reason it was way slower at loading the inital database, and it just didn't work aswell as Avalonia. At some point I might look at porting it to MAUI however chances are slim due to the lack of proper linux support.
 
 #### What APIs does ProjectCobalt access
-Currently ProjectCobalt only access IGDB
+Currently ProjectCobalt only accesses IGDB
 
 #### What features do you have planned
 [See all our publicly planned features here](https://github.com/Rarisma/ProjectCobalt/projects/1)

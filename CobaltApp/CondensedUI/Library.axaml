@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1980" d:DesignHeight="1080"
+             x:Class="ProjectCobalt.CondensedUI.Library">
+	<!-- Thats right theres even comments here now-->
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!--- Topbar grid-->
+		<Grid Grid.Row="0" Background="#1D2228">
+			<StackPanel Orientation="Horizontal" Grid.Row="0">
+				<Border Width="200"/>
+				<Button Grid.Column="1" Content="STORE"		Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
+				<Border Width="30"/>
+				<Button Grid.Column="2" Content="LIBRARY"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
+				<Border Width="30"/>
+				<Button Grid.Column="3" Content="COMMUNITY" Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
+				<Border Width="30"/>
+				<Button Grid.Column="4" Content="SETTINGS"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
+			</StackPanel>
+		</Grid>
+		
+		<StackPanel Grid.Row="1" Width="200" HorizontalAlignment="Left" Background="#1A1A1A">
+			<Border Height="5"/>
+			<AutoCompleteBox Name="SearchBox" Background="#1D2228" Width="180" HorizontalAlignment="Center"/>
+			<Border Height="5"/>
+			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center"/>
+			<Border Height="5"/>
+			<ListBox Name="GameList" />
+		</StackPanel>
+
+		
+	</Grid>
+</UserControl>
