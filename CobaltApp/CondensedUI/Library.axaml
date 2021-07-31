@@ -10,9 +10,14 @@
 			<RowDefinition Height="70"/>
 			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
-
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="200"/>
+			<ColumnDefinition Width="20"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		
 		<!--- Topbar grid-->
-		<Grid Grid.Row="0" Background="#1D2228">
+		<Grid Grid.Row="0" Grid.ColumnSpan="3" Background="#1D2228">
 			<StackPanel Orientation="Horizontal" Grid.Row="0">
 				<Border Width="200"/>
 				<Button Grid.Column="1" Content="STORE"		Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
@@ -25,13 +30,46 @@
 			</StackPanel>
 		</Grid>
 		
+		<!--- Side bar-->
 		<StackPanel Grid.Row="1" Width="200" HorizontalAlignment="Left" Background="#1A1A1A">
 			<Border Height="5"/>
 			<AutoCompleteBox Name="SearchBox" Background="#1D2228" Width="180" HorizontalAlignment="Center"/>
 			<Border Height="5"/>
-			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center"/>
+			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center" SelectionChanged="platformFilterUpdated"/>
 			<Border Height="5"/>
 			<ListBox Name="GameList" />
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" Grid.Column="1" Background="#282C37"/>
+		
+		<!--- Shows infomation about the selected game -->
+		<StackPanel Grid.Column="2" Grid.Row="1" Background="#282C37">
+			<Image Height="300"/>
+			<StackPanel Orientation="Horizontal"  >
+				<Button Height="45" Width="200" Background="#23B548" Content=" 	► PLAY " HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+				<TextBlock Text="LAST PLAYED:&#x0a;NEVER" Padding="80,0,20,0"/>
+				<Border Width="20"/>
+				<TextBlock Text="PLAY TIME:&#x0a;XX:XX" Padding="80,0,20,0"/>
+				<TextBlock Text="ACHIEVEMENTS&#x0a;0/0" Padding="80,0,20,0"/>
+			</StackPanel>
+			<Border Height="50"/>
+			<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="500">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="400"/>
+					<ColumnDefinition MinWidth="10"/>
+					<ColumnDefinition Width="400"/>
+					<ColumnDefinition Width="20"/>
+				</Grid.ColumnDefinitions>
+				<StackPanel Background="#2C3543" HorizontalAlignment="Stretch" Grid.Column="2">
+					<TextBlock Text="X Friends own this"/>
+					<Border Background="#ffffff"/>
+					<TextBlock Text="X friends want this"/>
+					<Border Background="#ffffff"/>
+				</StackPanel>
+				<StackPanel Background="#2C3543" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" >
+					<TextBlock Text="News Pane for Steam or game info pannel"/>
+				</StackPanel>
+			</Grid>
 		</StackPanel>
 
 		

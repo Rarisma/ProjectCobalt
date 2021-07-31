@@ -381,7 +381,6 @@ A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\runtimes\linux-musl-x64
 A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\runtimes\linux-x64\native\libSkiaSharp.so
 A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
 A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
-A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.csproj.AssemblyReference.cache
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.GeneratedMSBuildEditorConfig.editorconfig
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.AssemblyInfoInputs.cache
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.AssemblyInfo.cs
@@ -391,3 +390,4 @@ A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.dll
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ref\ProjectCobalt.dll
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.pdb
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.genruntimeconfig.cache
+A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.csproj.AssemblyReference.cache

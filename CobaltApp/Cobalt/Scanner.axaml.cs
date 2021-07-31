@@ -13,7 +13,10 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Microsoft.CodeAnalysis;
-
+//Theres too many coders every city, every nation
+//Some of yall need to find a new occupation
+//Fill out an application, go work at a gas station
+//but put the mouse down cause its fantasies that your chasing
 namespace ProjectCobalt.Cobalt
 {
     public partial class Scanner : UserControl

@@ -10,4 +10,7 @@
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.6" />
     <PackageReference Include="LibRarisma" Version="2.0.2" />
    </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AntiMatterUI" />
+  </ItemGroup>
 </Project>
