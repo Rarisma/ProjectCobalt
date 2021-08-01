@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WnYzvaMy36FiD8WQVw2l0Czedt3GttyZiXJQgaYY41txQ+VAaOVOlm6xgGs7kwia0XIiZAjUJtYKKqKuG89ugA==",
+  "dgSpecHash": "+MQduf6CUEinczlp/068iLgLozLpoz2jqd5+VIzW+P4h6lmCw5YLhuCVQFCyYD9CdQ6zHQ1wR5MZhJs/p5UtqA==",
   "success": true,
   "projectFilePath": "A:\\Repositories\\ProjectCobalt\\CobaltApp\\ProjectCobalt.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Rarisma\\.nuget\\packages\\avalonia.x11\\0.10.6\\avalonia.x11.0.10.6.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\harfbuzzsharp\\2.6.1.7\\harfbuzzsharp.2.6.1.7.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\2.6.1.7\\harfbuzzsharp.nativeassets.linux.2.6.1.7.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\igdb\\2.0.1\\igdb.2.0.1.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\jetbrains.annotations\\10.3.0\\jetbrains.annotations.10.3.0.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\librarisma\\2.0.2\\librarisma.2.0.2.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.6\\microsoft.codeanalysis.analyzers.2.9.6.nupkg.sha512",
@@ -28,6 +29,8 @@
     "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
+    "C:\\Users\\Rarisma\\.nuget\\packages\\restease\\1.5.0\\restease.1.5.0.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.80.2\\skiasharp.nativeassets.linux.2.80.2.nupkg.sha512",
     "C:\\Users\\Rarisma\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

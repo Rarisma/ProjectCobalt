@@ -3,8 +3,12 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
+using Avalonia.Media.Imaging;
+using Avalonia.Platform;
 //What a crazy year its been huh?
 //I was gonna leave, but I think I'll stay awhile
 //Its Rarisma and this is 512 Github Commits later
@@ -41,14 +45,14 @@ namespace ProjectCobalt.CondensedUI
             UniquePlatforms.AddRange(Platforms.Distinct());
             this.Find<ComboBox>("PlatformsSelect").Items = UniquePlatforms;
             this.Find<ComboBox>("PlatformsSelect").SelectedIndex = 0;
-
         }
 
-        private void platformFilterUpdated(object? sender, SelectionChangedEventArgs e)
+        private void platformFilterUpdated(object? sender, SelectionChangedEventArgs e) //Filters the listbox and the changes the searchbox suggestions
         {
             List<string> Filtered = new();
             if (this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString() == "All platforms")
             {
+                Titles.Sort();
                 this.Find<ListBox>("GameList").Items = Titles;
                 this.Find<AutoCompleteBox>("SearchBox").Items = Titles;
             }
@@ -62,9 +66,18 @@ namespace ProjectCobalt.CondensedUI
                     }
                 }
                 Filtered.Sort();
+                this.Find<AutoCompleteBox>("SearchBox").Items = Filtered;
                 this.Find<ListBox>("GameList").Items = Filtered;
+                
             }
             this.Find<ListBox>("GameList").SelectedIndex = 0;
         }
+        private void ListboxUpdate(object? sender, SelectionChangedEventArgs e)
+        {
+
+
+        }
+        
+        
     }
 }

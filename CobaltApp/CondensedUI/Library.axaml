@@ -37,14 +37,14 @@
 			<Border Height="5"/>
 			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center" SelectionChanged="platformFilterUpdated"/>
 			<Border Height="5"/>
-			<ListBox Name="GameList" />
+			<ListBox Name="GameList" SelectionChanged="ListboxUpdate"/>
 		</StackPanel>
 
 		<StackPanel Grid.Row="1" Grid.Column="1" Background="#282C37"/>
 		
 		<!--- Shows infomation about the selected game -->
 		<StackPanel Grid.Column="2" Grid.Row="1" Background="#282C37">
-			<Image Height="300"/>
+			<Image Height="300" Name="Background"/>
 			<StackPanel Orientation="Horizontal"  >
 				<Button Height="45" Width="200" Background="#23B548" Content=" 	► PLAY " HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 				<TextBlock Text="LAST PLAYED:&#x0a;NEVER" Padding="80,0,20,0"/>
@@ -55,15 +55,15 @@
 			<Border Height="50"/>
 			<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="500">
 				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="400"/>
+					<ColumnDefinition Width="1300"/>
 					<ColumnDefinition MinWidth="10"/>
 					<ColumnDefinition Width="400"/>
 					<ColumnDefinition Width="20"/>
 				</Grid.ColumnDefinitions>
 				<StackPanel Background="#2C3543" HorizontalAlignment="Stretch" Grid.Column="2">
-					<TextBlock Text="X Friends own this"/>
+					<TextBlock Text="X Friends own this" Padding="20,20,0,100"/>
 					<Border Background="#ffffff"/>
-					<TextBlock Text="X friends want this"/>
+					<TextBlock Text="X friends want this" Padding="20,20,0,100"/>
 					<Border Background="#ffffff"/>
 				</StackPanel>
 				<StackPanel Background="#2C3543" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" >

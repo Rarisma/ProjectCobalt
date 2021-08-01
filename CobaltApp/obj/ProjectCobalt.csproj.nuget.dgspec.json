@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[0.10.6, )"
             },
+            "IGDB": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
             "LibRarisma": {
               "target": "Package",
               "version": "[2.0.2, )"
