@@ -24,6 +24,7 @@ namespace ProjectCobalt
         {
             AvaloniaXamlLoader.Load(this);
             Global.Initalise.Check();
+            Global.Data.Display = this.Find<ContentControl>("Display");
             //Just used for debugging
             if (File.Exists(@"C:\Users\Rarisma\Desktop\API.txt")) { Global.Data.IGDBAPIKeys = File.ReadAllLines(@"C:\Users\Rarisma\Desktop\API.txt"); }
             

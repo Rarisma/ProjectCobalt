@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 using IGDB;
@@ -142,6 +143,10 @@ namespace ProjectCobalt.CondensedUI
             List<object> Loaded = new();
             Loaded.AddRange((IEnumerable<object>) this.Find<ListBox>("GameList").Items);
             this.Find<ListBox>("GameList").SelectedIndex = Loaded.IndexOf(Search);
+        }
+        private void OpenScanner(object? sender, RoutedEventArgs e)
+        {
+            Global.Data.Display.Content = new Cobalt.Scanner();
         }
     }
 }

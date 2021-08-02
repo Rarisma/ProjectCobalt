@@ -24,8 +24,8 @@
 				<Border Width="30"/>
 				<Button Grid.Column="2" Content="LIBRARY"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
 				<Border Width="30"/>
-				<Border Width="30"/>
 				<Button Grid.Column="4" Content="SETTINGS"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
+				<Button Grid.Column="4" Content="ADD GAME"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center" Click="OpenScanner"/>
 			</StackPanel>
 		</Grid>
 		

@@ -12,6 +12,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Avalonia.Media.Imaging;
 using Microsoft.CodeAnalysis;
 //Theres too many coders every city, every nation
 //Some of yall need to find a new occupation
@@ -33,6 +34,10 @@ namespace ProjectCobalt.Cobalt
         public Scanner()
         {
             AvaloniaXamlLoader.Load(this);
+            LibRarisma.Connectivity.DownloadFile("https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Resources/Platforms/steam.png", Global.Paths.Cache + "//Images///Platforms//", "Steam.png");
+            LibRarisma.Connectivity.DownloadFile("https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Resources/Platforms/Roms.png", Global.Paths.Cache + "//Images///Platforms//", "roms.png");
+            this.Find<Image>("Steam").Source = new Bitmap(Global.Paths.Cache + "//Images//Platforms//Steam.png");
+            this.Find<Image>("Roms").Source = new Bitmap(Global.Paths.Cache + "//Images//Platforms//roms.png");
         }
 
         private async void Continue(object? sender, RoutedEventArgs e)

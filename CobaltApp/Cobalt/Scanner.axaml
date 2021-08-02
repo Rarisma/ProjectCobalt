@@ -8,7 +8,19 @@
 		<TextBlock Text="Welcome to Project Cobalt" FontSize="40" Padding="20" HorizontalAlignment="Center"></TextBlock>
 		<Border MinHeight="50" MaxHeight="200"></Border>
 		<StackPanel Orientation="Horizontal">
-			
+			<Button Width="256" Height="256" Background="#000">
+				<Panel>
+					<Image Name="Steam" Height="200"/>
+					<TextBlock Text="Steam" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+				</Panel>
+			</Button>
+			<Border Width="30"/>
+			<Button Width="256" Height="256" Background="#000">
+				<Panel>
+					<Image Name="Roms" Height="200"/>
+					<TextBlock Text="Roms" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+				</Panel>
+			</Button>
 		</StackPanel>
 	</StackPanel>
 </UserControl>
