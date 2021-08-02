@@ -391,3 +391,6 @@ A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ref\ProjectCobalt.dll
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.pdb
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.genruntimeconfig.cache
 A:\Repositories\ProjectCobalt\CobaltApp\obj\Debug\net5.0\ProjectCobalt.csproj.AssemblyReference.cache
+A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\IGDB.dll
+A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+A:\Repositories\ProjectCobalt\CobaltApp\bin\Debug\net5.0\RestEase.dll

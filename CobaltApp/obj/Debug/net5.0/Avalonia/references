@@ -26,6 +26,7 @@ C:\Users\Rarisma\.nuget\packages\avalonia\0.10.6\lib\netcoreapp2.0\Avalonia.Visu
 C:\Users\Rarisma\.nuget\packages\avalonia.win32\0.10.6\lib\netstandard2.0\Avalonia.Win32.dll
 C:\Users\Rarisma\.nuget\packages\avalonia.x11\0.10.6\lib\netstandard2.0\Avalonia.X11.dll
 C:\Users\Rarisma\.nuget\packages\harfbuzzsharp\2.6.1.7\lib\netstandard2.0\HarfBuzzSharp.dll
+C:\Users\Rarisma\.nuget\packages\igdb\2.0.1\lib\netstandard2.0\IGDB.dll
 C:\Users\Rarisma\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll
 C:\Users\Rarisma\.nuget\packages\librarisma\2.0.2\lib\net5.0\LibRarisma.dll
 C:\Users\Rarisma\.nuget\packages\microsoft.codeanalysis.csharp\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -38,6 +39,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\Microso
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\Microsoft.Win32.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\netstandard.dll
+C:\Users\Rarisma\.nuget\packages\newtonsoft.json\11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\Rarisma\.nuget\packages\restease\1.5.0\lib\netstandard2.1\RestEase.dll
 C:\Users\Rarisma\.nuget\packages\skiasharp\2.80.2\lib\netstandard2.0\SkiaSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\System.Buffers.dll

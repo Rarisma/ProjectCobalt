@@ -23,11 +23,15 @@ namespace ProjectCobalt
         public MainWindow()
         {
             AvaloniaXamlLoader.Load(this);
-            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "//Data//Library.db"))
+            Global.Initalise.Check();
+            //Just used for debugging
+            if (File.Exists(@"C:\Users\Rarisma\Desktop\API.txt")) { Global.Data.IGDBAPIKeys = File.ReadAllLines(@"C:\Users\Rarisma\Desktop\API.txt"); }
+            
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "//Data//Library.db")) //Will open to the library page if user has scanned games before
             {
                 this.Find<ContentControl>("Display").Content = new CondensedUI.Library();
             }
-            else
+            else //Otherwise makes user scan
             {
                 this.Find<ContentControl>("Display").Content = new Cobalt.Scanner();
 

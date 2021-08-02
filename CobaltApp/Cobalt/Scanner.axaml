@@ -7,8 +7,8 @@
 	<StackPanel >
 		<TextBlock Text="Welcome to Project Cobalt" FontSize="40" Padding="20" HorizontalAlignment="Center"></TextBlock>
 		<Border MinHeight="50" MaxHeight="200"></Border>
-		<TextBlock Text="Put any paths below and we will look for you games and roms there" HorizontalAlignment="Center"  Name="Gamedirs" Padding="20"></TextBlock>
-		<TextBox Name="RomsList" Width="600" Height="400" AcceptsReturn="True" AcceptsTab="True"></TextBox>
-		<Button Width="600" Content="Continue" Name="Continue" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="20" Click="Continue"></Button>
+		<StackPanel Orientation="Horizontal">
+			
+		</StackPanel>
 	</StackPanel>
 </UserControl>
