@@ -70,8 +70,8 @@ namespace ProjectCobalt.CondensedUI
             if (this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString() == "All platforms")
             {
                 Titles.Sort();
-                this.Find<ListBox>("GameList").Items = Titles;
-                this.Find<AutoCompleteBox>("SearchBox").Items = Titles;
+                this.Find<ListBox>("GameList").Items = Titles.Distinct();
+                this.Find<AutoCompleteBox>("SearchBox").Items = Titles.Distinct();
             }
             else
             {
@@ -83,8 +83,8 @@ namespace ProjectCobalt.CondensedUI
                     }
                 }
                 Filtered.Sort();
-                this.Find<AutoCompleteBox>("SearchBox").Items = Filtered;
-                this.Find<ListBox>("GameList").Items = Filtered;
+                this.Find<AutoCompleteBox>("SearchBox").Items = Filtered.Distinct();
+                this.Find<ListBox>("GameList").Items = Filtered.Distinct();
                 
             }
             this.Find<ListBox>("GameList").SelectedIndex = 0;

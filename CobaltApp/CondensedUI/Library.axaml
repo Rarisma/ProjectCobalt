@@ -5,6 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="1980" d:DesignHeight="1080"
              x:Class="ProjectCobalt.CondensedUI.Library">
 	<!-- Thats right theres even comments here now-->
+	<!-- TODO Make the listbox dynamically resize -->
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="70"/>
@@ -36,7 +37,7 @@
 			<Border Height="5"/>
 			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center" SelectionChanged="platformFilterUpdated"/>
 			<Border Height="5"/>
-			<ListBox Name="GameList" SelectionChanged="ListboxUpdate"/>
+			<ListBox Name="GameList" SelectionChanged="ListboxUpdate" Height="1000"/>
 		</StackPanel>
 
 		<StackPanel Grid.Row="1" Grid.Column="1" Background="#282C37"/>

@@ -14,6 +14,7 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
 using Microsoft.CodeAnalysis;
+using ProjectCobalt.Global;
 //Theres too many coders every city, every nation
 //Some of yall need to find a new occupation
 //Fill out an application, go work at a gas station
@@ -30,7 +31,8 @@ namespace ProjectCobalt.Cobalt
         private static List<List<string>> Found = new();
         private static List<string> Files = new();
         private static List<string> InProgress = new();
-
+        private static string path;
+        
         public Scanner()
         {
             AvaloniaXamlLoader.Load(this);
@@ -40,43 +42,70 @@ namespace ProjectCobalt.Cobalt
             this.Find<Image>("Roms").Source = new Bitmap(Global.Paths.Cache + "//Images//Platforms//roms.png");
         }
 
-        private async void Continue(object? sender, RoutedEventArgs e)
+        private void Steam(object? sender, RoutedEventArgs e)
         {
-            this.Find<Button>("Continue").Content = "Loading Database";
-            await Task.Run(() => RomDB.LoadDB());
-            this.Find<Button>("Continue").Content = "Scanning roms";
-            Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Games//");
-
-
-            List<string> RomDirs = new(Regex.Split(this.Find<TextBox>("RomsList").Text, Environment.NewLine));
-            foreach (string dir in RomDirs)
-            {
-                Files.AddRange(Directory.GetFiles(dir, "*", SearchOption.AllDirectories));
+            path = this.Find<TextBox>("Path").Text;
+            Files.AddRange(Directory.GetFiles(path, "*.acf"));
+            string found = "\n";
+            foreach (var ACFFile in  Files)
+            { 
+                Debug.WriteLine("Scanning " + ACFFile);
+                List<string> Raw = new();
+                string name = "2";
+                string appid = "";
+                Raw.AddRange(File.ReadAllLines(ACFFile));
+                foreach (string Line in Raw)
+                {
+                    if (Line.Contains("appid"))
+                    {
+                        foreach (char Letter in Line)
+                        {
+                            if (char.IsNumber(Letter) && Letter != '"') { appid += Letter;  }
+                        }
+                    }
+                    else if (Line.Contains("name"))
+                    {
+                        int count = 0;
+                        foreach (char Letter in Line)
+                        {
+                            if (Letter == '"') { count++; }
+                            else if (count == 3)
+                            {
+                                name += Letter;
+                            }
+                        }
+                        if (name[0] == '2') { name = name.Substring(1); }
+                    }
+                }
+                found += "\n" + name + "\nSteam\n" + appid + "\n";
             }
-
-            ScanFiles();
+            
+            File.AppendAllText(AppDomain.CurrentDomain.BaseDirectory + "//Data//Library.db", found);
+            Global.Data.Display.Content = new CondensedUI.Library();
         }
 
-        private static void ScanFiles()
+        private void Roms(object? sender, RoutedEventArgs e)
         {
+            path = this.Find<TextBox>("Path").Text;
+            if (path == "") {return;}
+            Task.Run(() => RomDB.LoadDB());
             string FoundString = "";
-            var a = new Random();
+            Files.AddRange(Directory.GetFiles(path, "*", SearchOption.AllDirectories));
             Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data//");
             Parallel.ForEach(Files, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount }, File =>
             {
 
                 string hash = MD5Hasher(File, Files.IndexOf(File));
                 bool Identified = false;
-                foreach (string[] Game in RomDB.Database)
+                foreach (List<string> Game in RomDB.Database)
                 {
                     if (hash.ToUpper() == Game[3].ToUpper() && hash != "ERROR")
                     {
                         Identified = true;
-                        List<string> Games = new();
-                        Games.AddRange(Game);
-                        Games.Add(File);
-                        Found.Add(Games);
-                        foreach (string Item in Games) {FoundString += Item.Trim() + "\n";}
+                        Game.AddRange(Game);
+                        Game.Add(File);
+                        Found.Add(Game);
+                        foreach (string Item in Game) {FoundString += Item.Trim() + "\n";}
                         FoundString += "\n";
                     }
                 }
@@ -100,11 +129,8 @@ namespace ProjectCobalt.Cobalt
                 if (fileName.Contains(".zip") || fileName.Contains(".7z") || fileName.Contains(".rar"))
                 {
                     zip = true;
-                    ZipFile.ExtractToDirectory(fileName,
-                        AppDomain.CurrentDomain.BaseDirectory + "\\Temp\\" + RomID + "\\");
-                    string[] Files =
-                        Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + "\\Temp\\" + RomID + "\\", "*",
-                            SearchOption.AllDirectories);
+                    ZipFile.ExtractToDirectory(fileName, AppDomain.CurrentDomain.BaseDirectory + "\\Temp\\" + RomID + "\\");
+                    string[] Files = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + "\\Temp\\" + RomID + "\\", "*", SearchOption.AllDirectories);
                     fileName = Files[0];
                 }
 
@@ -114,15 +140,9 @@ namespace ProjectCobalt.Cobalt
                 file.Close();
 
                 StringBuilder sb = new();
-                for (int i = 0; i < retVal.Length; i++)
-                {
-                    sb.Append(retVal[i].ToString("x2"));
-                }
+                for (int i = 0; i < retVal.Length; i++) { sb.Append(retVal[i].ToString("x2")); }
 
-                if (zip == true)
-                {
-                    Directory.Delete(AppDomain.CurrentDomain.BaseDirectory + "\\Temp\\" + RomID + "\\", true);
-                }
+                if (zip) { Directory.Delete(AppDomain.CurrentDomain.BaseDirectory + "\\Temp\\" + RomID + "\\", true); }
 
                 completed++;
                 InProgress.Remove(fileName);

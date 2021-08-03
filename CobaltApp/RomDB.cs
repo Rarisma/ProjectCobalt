@@ -19,7 +19,7 @@ namespace ProjectCobalt
     
         public static List<string> GameSet = new();
         public static List<string> Loaded = new();
-        public static List<string[]> Database = new();
+        public static List<List<string>> Database = new();
 
         public static void LoadDB()
         {
@@ -54,7 +54,7 @@ namespace ProjectCobalt
 
                 platform = platform.Replace("<name>", "");
                 platform = platform.Replace("</name>", "");
-                Database.Add(new string[] { Name, Size, CRC, MD5, Sha1, Serial, platform });
+                Database.Add(new List<string> { Name, Size, CRC, MD5, Sha1, Serial, platform });
                 complete++;
             });
 
