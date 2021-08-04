@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Avalonia.Controls;
@@ -15,7 +16,7 @@ namespace ProjectCobalt.Cobalt
     /// </summary>
     public class Library
     {
-        public static List<List<string>> Installed;
+        public static List<List<string>> Installed = new();
 
         public static void Init() //Called when first opened
         {
@@ -31,7 +32,7 @@ namespace ProjectCobalt.Cobalt
             //Cleans each name, eg removes stuff like (USA) and [b]
             foreach (var Game in Installed)
             {
-                if (Game[0].Contains("(") || Game[0].Contains("["))
+                if (Game[0].Contains('(') || Game[0].Contains('['))
                 {
                     string constructed = "";
                     bool Disabled = false;
@@ -45,8 +46,23 @@ namespace ProjectCobalt.Cobalt
                 }
                 Game[^2] = Game[^2].Trim(); //Cleans the platform as it tends to have weird spacing
             }
-
         }
+
+        public static void LaunchGame(List<string> Game)
+        {
+            Process App = new();
+            if (Game[^2] == "Steam")
+            {
+                App.StartInfo.UseShellExecute = true;
+                App.StartInfo.FileName = "steam://run/" + Game.Last();
+                App.Start();
+            }
+            else
+            {   
+                Emulators.RunGame(Game.Last(),Game[^2]);
+            }
+        }
+        
 
     }
 }

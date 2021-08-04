@@ -37,7 +37,7 @@
 			<Border Height="5"/>
 			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center" SelectionChanged="platformFilterUpdated"/>
 			<Border Height="5"/>
-			<ListBox Name="GameList" SelectionChanged="ListboxUpdate" Height="600"/>
+			<ListBox Name="GameList" SelectionChanged="ListboxUpdate" Height="800"/>
 		</StackPanel>
 
 		<StackPanel Grid.Row="1" Grid.Column="1" Background="#282C37"/>

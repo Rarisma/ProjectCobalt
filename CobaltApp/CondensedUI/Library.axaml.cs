@@ -13,6 +13,7 @@ using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 using IGDB;
 using IGDB.Models;
+using ProjectCobalt.Cobalt;
 //What a crazy year its been huh?
 //I was gonna leave, but I think I'll stay awhile
 //Its Rarisma and this is 2021 Side B
@@ -21,47 +22,24 @@ namespace ProjectCobalt.CondensedUI
     public partial class Library : UserControl
     {
         List<string> Titles = new();
-        List<string> Platforms = new();
-        List<string> UniquePlatforms = new List<string>() {"All platforms"};
-        List<List<string>> LibraryDB = new();
+        List<string> Platforms = new List<string>() {"All platforms"};
         IGDBClient igdb = new IGDBClient(Global.Data.IGDBAPIKeys[0], Global.Data.IGDBAPIKeys[1]);
 
         public Library()    
         {
             AvaloniaXamlLoader.Load(this);
 
-            string[] Raw = File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + "//Data//Library.db");
-            LibraryDB.Add(new List<string> { });
-            for (int i = 0; i < Raw.Length; i++)
+            foreach (var Game in Cobalt.Library.Installed)
             {
-                if (Raw[i] != "") { LibraryDB.Last().Add(Raw[i]); }
-                else if (Raw[i] == "") { LibraryDB.Add(new List<string>()); }
-            }
-
-            foreach(var Game in LibraryDB)
-            {
-                if (Game.Count > 0)
-                {
-                    if (Game[0].Contains("("))
-                    {
-                        string constructed = "";
-                        bool Disabled = false;
-                        foreach (var VARIABLE in Game[0])
-                        {
-                            if (VARIABLE == '(') { Disabled = true; }
-                            else if (VARIABLE == ')') { Disabled = false; }
-                            else if (Disabled == false){ constructed += VARIABLE;}
-                        }
-                        Game[0] = constructed;
-                    }
-                    Titles.Add(Game[0]);
-                    Platforms.Add(Game[^2].Trim()); //Platform is always the line before the end
-                }
+                Titles.Add(Game[0]);
+                Platforms.Add(Game[^2]);
             }
             
-            UniquePlatforms.AddRange(Platforms.Distinct());
-            this.Find<ComboBox>("PlatformsSelect").Items = UniquePlatforms;
+            this.Find<ComboBox>("PlatformsSelect").Items = Platforms.Distinct();
             this.Find<ComboBox>("PlatformsSelect").SelectedIndex = 0;
+            Titles.Sort();
+            this.Find<ListBox>("GameList").Items = Titles.Distinct();
+            this.Find<AutoCompleteBox>("SearchBox").Items = Titles.Distinct();
         }
 
         private void platformFilterUpdated(object? sender, SelectionChangedEventArgs e) //Filters the listbox and the changes the searchbox suggestions
@@ -75,9 +53,9 @@ namespace ProjectCobalt.CondensedUI
             }
             else
             {
-                foreach (var Game in LibraryDB)
+                foreach (var Game in Cobalt.Library.Installed)
                 {
-                    if (Game.Count > 0 && Platforms[LibraryDB.IndexOf(Game)].Trim() == this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString())
+                    if (Game.Count > 0 && Platforms[Cobalt.Library.Installed.IndexOf(Game)].Trim() == this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString())
                     {
                         Filtered.Add(Game.First());
                     }
@@ -153,23 +131,14 @@ namespace ProjectCobalt.CondensedUI
         private void Play(object? sender, RoutedEventArgs e)
         {
             List<string> SelectedGame = new();
-            Process test = new();
-            foreach (var Game in LibraryDB)
+            foreach (var Game in Cobalt.Library.Installed)
             {
                 if (Game[0] == this.Find<ListBox>("GameList").SelectedItem.ToString())
                 {
-                    SelectedGame = LibraryDB[LibraryDB.IndexOf(Game)];
+                    SelectedGame = Game;
                 }
-            }
-
-            if (SelectedGame[^2] == "Steam")
-            {
-                test.StartInfo.UseShellExecute = true;
-                test.StartInfo.FileName = "steam://run/" + SelectedGame.Last();
-                test.Start();
-            }
-            
-            
+            }            
+            Cobalt.Library.LaunchGame(SelectedGame);
         }
     }
 }
