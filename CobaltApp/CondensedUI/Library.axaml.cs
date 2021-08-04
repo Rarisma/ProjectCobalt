@@ -15,7 +15,7 @@ using IGDB;
 using IGDB.Models;
 //What a crazy year its been huh?
 //I was gonna leave, but I think I'll stay awhile
-//Its Rarisma and this is 512 Github Commits later
+//Its Rarisma and this is 2021 Side B
 namespace ProjectCobalt.CondensedUI
 {
     public partial class Library : UserControl
@@ -87,6 +87,7 @@ namespace ProjectCobalt.CondensedUI
                 this.Find<ListBox>("GameList").Items = Filtered.Distinct();
                 
             }
+            this.Find<TextBlock>("Gamecount").Text = this.Find<ListBox>("GameList").ItemCount + " Games";
             this.Find<ListBox>("GameList").SelectedIndex = 0;
         }
         private void ListboxUpdate(object? sender, SelectionChangedEventArgs e)
@@ -147,6 +148,28 @@ namespace ProjectCobalt.CondensedUI
         private void OpenScanner(object? sender, RoutedEventArgs e)
         {
             Global.Data.Display.Content = new Cobalt.Scanner();
+        }
+        
+        private void Play(object? sender, RoutedEventArgs e)
+        {
+            List<string> SelectedGame = new();
+            Process test = new();
+            foreach (var Game in LibraryDB)
+            {
+                if (Game[0] == this.Find<ListBox>("GameList").SelectedItem.ToString())
+                {
+                    SelectedGame = LibraryDB[LibraryDB.IndexOf(Game)];
+                }
+            }
+
+            if (SelectedGame[^2] == "Steam")
+            {
+                test.StartInfo.UseShellExecute = true;
+                test.StartInfo.FileName = "steam://run/" + SelectedGame.Last();
+                test.Start();
+            }
+            
+            
         }
     }
 }

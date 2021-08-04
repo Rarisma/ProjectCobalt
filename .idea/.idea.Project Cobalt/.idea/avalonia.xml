@@ -6,6 +6,7 @@
         <entry key="CobaltApp/Cobalt/Scanner.axaml" value="CobaltApp/ProjectCobalt.csproj" />
         <entry key="CobaltApp/CondensedUI/Library.axaml" value="CobaltApp/ProjectCobalt.csproj" />
         <entry key="CobaltApp/MainWindow.axaml" value="CobaltApp/ProjectCobalt.csproj" />
+        <entry key="CobaltApp/SupernovaUI/Main.axaml" value="CobaltApp/ProjectCobalt.csproj" />
       </map>
     </option>
   </component>

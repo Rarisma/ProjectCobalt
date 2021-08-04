@@ -10,6 +10,7 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="70"/>
 			<RowDefinition Height="*"/>
+			<RowDefinition Height="50"/>
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="200"/>
@@ -26,7 +27,6 @@
 				<Button Grid.Column="2" Content="LIBRARY"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
 				<Border Width="30"/>
 				<Button Grid.Column="4" Content="SETTINGS"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
-				<Button Grid.Column="4" Content="ADD GAME"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center" Click="OpenScanner"/>
 			</StackPanel>
 		</Grid>
 		
@@ -37,7 +37,7 @@
 			<Border Height="5"/>
 			<ComboBox Name="PlatformsSelect" Width="180" Background="#1D2228" HorizontalAlignment="Center" SelectionChanged="platformFilterUpdated"/>
 			<Border Height="5"/>
-			<ListBox Name="GameList" SelectionChanged="ListboxUpdate" Height="1000"/>
+			<ListBox Name="GameList" SelectionChanged="ListboxUpdate" Height="600"/>
 		</StackPanel>
 
 		<StackPanel Grid.Row="1" Grid.Column="1" Background="#282C37"/>
@@ -49,7 +49,7 @@
 			<Border Height="25"/>
 
 			<StackPanel Orientation="Horizontal"  >
-				<Button Height="45" Width="200" Background="#23B548" Content=" 	► PLAY " HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+				<Button Height="45" Width="200" Background="#23B548" Content=" 	► PLAY " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Play"/>
 				<TextBlock Text="LAST PLAYED:&#x0a;NEVER" Padding="80,0,20,0"/>
 				<Border Width="20"/>
 				<TextBlock Text="PLAY TIME:&#x0a;XX:XX" Padding="80,0,20,0"/>
@@ -75,6 +75,10 @@
 			</Grid>
 		</StackPanel>
 
+		<StackPanel Grid.Row="2" Background="#1D2228" Orientation="Horizontal" Grid.ColumnSpan="3">
+			<Button  Content="+ ADD GAME"	Background="#1D2228" FontSize="12"	HorizontalAlignment="Center" Click="OpenScanner"/>
+			<TextBlock Text="XX Games" Name="Gamecount" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,0"/>
+		</StackPanel>
 		
 	</Grid>
 </UserControl>

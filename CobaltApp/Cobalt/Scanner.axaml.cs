@@ -58,10 +58,7 @@ namespace ProjectCobalt.Cobalt
                 {
                     if (Line.Contains("appid"))
                     {
-                        foreach (char Letter in Line)
-                        {
-                            if (char.IsNumber(Letter) && Letter != '"') { appid += Letter;  }
-                        }
+                        foreach (char Letter in Line) { if (char.IsNumber(Letter)) { appid += Letter;  } }
                     }
                     else if (Line.Contains("name"))
                     {
@@ -69,10 +66,7 @@ namespace ProjectCobalt.Cobalt
                         foreach (char Letter in Line)
                         {
                             if (Letter == '"') { count++; }
-                            else if (count == 3)
-                            {
-                                name += Letter;
-                            }
+                            else if (count == 3) { name += Letter; }
                         }
                         if (name[0] == '2') { name = name.Substring(1); }
                     }

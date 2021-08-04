@@ -30,6 +30,7 @@ namespace ProjectCobalt
             
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "//Data//Library.db")) //Will open to the library page if user has scanned games before
             {
+                //this.Find<ContentControl>("Display").Content = new SupernovaUI.Main();
                 this.Find<ContentControl>("Display").Content = new CondensedUI.Library();
             }
             else //Otherwise makes user scan

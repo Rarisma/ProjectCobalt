@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Runtime.CompilerServices;
 using Avalonia.Controls;
 namespace ProjectCobalt.Global
 {
@@ -19,6 +20,8 @@ namespace ProjectCobalt.Global
             {
                 LibRarisma.Connectivity.DownloadFile("https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Resources/Error2.png", Global.Paths.Cache + "//Images//System//", "Error2.png");
             }
+            
+            Cobalt.Library.Init(); //Initialises the library
         }
     }
 }
