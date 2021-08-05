@@ -1,15 +1,5 @@
-Nintendo Gameboy
-MGBA
-https://github-releases.githubusercontent.com/27788471/73593d80-e1c4-11eb-88e7-a9c3b5bb02a6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210804T173500Z&X-Amz-Expires=300&X-Amz-Signature=db885c8abe2d32545842723b68c7bc802e03fd0fd0a93fea300a35d25f8e0259&X-Amz-SignedHeaders=host&actor_id=49795711&key_id=0&repo_id=27788471&response-content-disposition=attachment%3B%20filename%3DmGBA-0.9.2-win64.7z&response-content-type=application%2Foctet-stream
-
-Nintendo Wii
-Dolphin
-https://dl.dolphin-emu.org/builds/5a/6c/dolphin-master-5.0-14790-x64.7z
-
-Nintendo DS
-MelonDS
-https://melonds.kuribo64.net/downloads/melonDS_0.9.2_win64.7z
-
-Super Nintendo Entertainment System
+Nintendo - Super Nintendo Entertainment System
 bsnes
+/bsnes-nightly/bsnes.exe
+true
 https://github.com/bsnes-emu/bsnes/releases/download/nightly/bsnes-windows.zip
