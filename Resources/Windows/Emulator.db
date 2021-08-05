@@ -1,5 +1,5 @@
 Nintendo - Super Nintendo Entertainment System
 bsnes
 /bsnes-nightly/bsnes.exe
-false
+true
 https://github.com/bsnes-emu/bsnes/releases/download/nightly/bsnes-windows.zip
