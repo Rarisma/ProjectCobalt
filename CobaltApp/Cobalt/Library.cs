@@ -50,16 +50,16 @@ namespace ProjectCobalt.Cobalt
 
         public static void LaunchGame(List<string> Game)
         {
-            Process App = new();
             if (Game[^2] == "Steam")
             {
+                Process App = new();
                 App.StartInfo.UseShellExecute = true;
                 App.StartInfo.FileName = "steam://run/" + Game.Last();
                 App.Start();
             }
             else
             {   
-                Emulators.RunGame(Game.Last(),Game[^2]);
+                Emulators.RunGame(Game);
             }
         }
         
