@@ -3,3 +3,15 @@ bsnes
 /bsnes-nightly/bsnes.exe
 true
 https://github.com/bsnes-emu/bsnes/releases/download/nightly/bsnes-windows.zip
+
+Nintendo - Nintendo DS
+MelonDS
+/melonDS.exe
+true
+https://melonds.kuribo64.net/downloads/melonDS_0.9.2_win64.7z
+
+Nintendo - Game Boy
+MGBA
+/mGBA-0.9.2-win64/mGBA.exe
+true
+https://github.com/mgba-emu/mgba/releases/download/0.9.2/mGBA-0.9.2-win64.7z
