@@ -17,7 +17,7 @@ true
 https://github.com/mgba-emu/mgba/releases/download/0.9.2/mGBA-0.9.2-win64.7z
 
 Nintendo - Nintendo 64
-Project64
-PJ64/Project64.exe
+Mupen64Plus
+mupen64plus/mupen64plus-gui.exe
 true
-https://www.dropbox.com/s/xk8upcpns8vpb23/PJ64.zip?dl=1
+https://github.com/loganmc10/m64p/releases/download/v2021.7.27/m64p-win64-090b153.zip
