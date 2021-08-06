@@ -35,6 +35,7 @@ namespace ProjectCobalt.CondensedUI
                 Platforms.Add(Game[^2]);
             }
             
+            Platforms.Sort();
             this.Find<ComboBox>("PlatformsSelect").Items = Platforms.Distinct();
             this.Find<ComboBox>("PlatformsSelect").SelectedIndex = 0;
             Titles.Sort();
@@ -55,7 +56,7 @@ namespace ProjectCobalt.CondensedUI
             {
                 foreach (var Game in Cobalt.Library.Installed)
                 {
-                    if (Game.Count > 0 && Platforms[Cobalt.Library.Installed.IndexOf(Game)].Trim() == this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString())
+                    if (Game[^2] == this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString())
                     {
                         Filtered.Add(Game.First());
                     }

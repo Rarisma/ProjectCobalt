@@ -2,6 +2,7 @@
 using System.IO;
 using System.Runtime.CompilerServices;
 using Avalonia.Controls;
+//The 4 regi's Regice, Registeel, Regirock and Regedit
 namespace ProjectCobalt.Global
 {
     public class Initalise
