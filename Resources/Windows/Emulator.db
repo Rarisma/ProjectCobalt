@@ -33,3 +33,9 @@ bsnes
 /bsnes-nightly/bsnes.exe
 true
 https://github.com/bsnes-emu/bsnes/releases/download/nightly/bsnes-windows.zip
+
+Nintendo - Wii
+Dolphin
+Dolphin-x64/Dolphin.exe
+true
+https://dl.dolphin-emu.org/builds/5a/6c/dolphin-master-5.0-14790-x64.7z
