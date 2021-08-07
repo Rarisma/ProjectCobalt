@@ -1,18 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.IO.Compression;
 using System.Linq;
-using IGDB.Models;
-using Newtonsoft.Json.Bson;
-//I guess ill explain some stuff here
-//RSM isn't gone, two things might happen to it
-//A) it will get merged into this and RSM will get the framework to be used by other apps
-//B) RSM will get a reboot when MAUI drops as a side project to this.
-namespace ProjectCobalt.Cobalt
+
+namespace CobaltApp.Cobalt
 {
-    class Emulators //Handles sourcing, downloading and running the games in emulators
+    public class Emulation
     {
         static List<List<string>> EmuDB = new();
 

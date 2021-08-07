@@ -1,25 +1,16 @@
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
-using Avalonia.Platform;
 using IGDB;
 using IGDB.Models;
-using ProjectCobalt.Cobalt;
-//What a crazy year its been huh?
-//I was gonna leave, but I think I'll stay awhile
-//Its Rarisma and this is 2021 Side B
-namespace ProjectCobalt.CondensedUI
+
+namespace CobaltApp.Steam
 {
-    public partial class Library : UserControl
+    public class Library : UserControl
     {
         List<string> Titles = new();
         List<string> Platforms = new List<string>() {"All platforms"};
@@ -69,6 +60,7 @@ namespace ProjectCobalt.CondensedUI
             this.Find<TextBlock>("Gamecount").Text = this.Find<ListBox>("GameList").ItemCount + " Games";
             this.Find<ListBox>("GameList").SelectedIndex = 0;
         }
+        
         private void ListboxUpdate(object? sender, SelectionChangedEventArgs e)
         {
             this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Cache + "//Images//System//Loading.png");
@@ -115,8 +107,10 @@ namespace ProjectCobalt.CondensedUI
             {
                 this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Cache + "//Images//System//Error.png");
             }
+            
 
         }
+        
         private void Search(object? sender, SelectionChangedEventArgs e)
         {
             string Search = this.Find<AutoCompleteBox>("SearchBox").SelectedItem.ToString();
@@ -124,6 +118,7 @@ namespace ProjectCobalt.CondensedUI
             Loaded.AddRange((IEnumerable<object>) this.Find<ListBox>("GameList").Items);
             this.Find<ListBox>("GameList").SelectedIndex = Loaded.IndexOf(Search);
         }
+        
         private void OpenScanner(object? sender, RoutedEventArgs e)
         {
             Global.Data.Display.Content = new Cobalt.Scanner();
@@ -140,6 +135,8 @@ namespace ProjectCobalt.CondensedUI
                 }
             }            
             Cobalt.Library.LaunchGame(SelectedGame);
+            Cobalt.Library.LaunchGame(SelectedGame);
         }
+        
     }
 }

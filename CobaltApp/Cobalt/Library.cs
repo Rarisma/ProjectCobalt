@@ -1,20 +1,13 @@
-﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using Avalonia.Controls;
 //I'm the code landlord you're a damned fraud!
-//Ayo any of you geezers remember Coraline (tf was that shit)
-//look at these across my projects, is this character development
-//also got my github to have a readme
+//look at these across my projects, is this character development?
 //(create a repo that is the same name as your github account eg i'd make a repo called rarisma)
-namespace ProjectCobalt.Cobalt
+namespace CobaltApp.Cobalt
 {
-    /// <summary>
-    /// made to simplify/unify the implementations across the UIs for consistency
-    /// </summary>
-    public class Library
+    class Library //Simplifies implantation of library across skins
     {
         public static List<List<string>> Installed = new();
 
@@ -59,7 +52,7 @@ namespace ProjectCobalt.Cobalt
             }
             else
             {   
-                Emulators.RunGame(Game);
+                Emulation.RunGame(Game);
             }
         }
         

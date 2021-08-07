@@ -2,8 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="1980" d:DesignHeight="1080"
-             x:Class="ProjectCobalt.CondensedUI.Library">
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CobaltApp.Steam.Library">
 	<!-- Thats right theres even comments here now-->
 	<!-- TODO Make the listbox dynamically resize -->
 	<Grid>
@@ -79,6 +79,5 @@
 			<Button  Content="+ ADD GAME"	Background="#1D2228" FontSize="12"	HorizontalAlignment="Center" Click="OpenScanner"/>
 			<TextBlock Text="XX Games" Name="Gamecount" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,0"/>
 		</StackPanel>
-		
 	</Grid>
 </UserControl>

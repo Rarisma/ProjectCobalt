@@ -1,11 +1,9 @@
+﻿using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
-using System;
-//More easter eggs than RSM
-//This is my master thesis
-//We bumped the quota to 3 per C# file, so enjoy or complain
-namespace ProjectCobalt
+
+namespace CobaltApp
 {
     class Program
     {
