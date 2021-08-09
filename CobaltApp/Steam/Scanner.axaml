@@ -8,24 +8,8 @@
         <TextBlock Text="Welcome to Project Cobalt" FontSize="40" Padding="20" HorizontalAlignment="Center"/>
 		
         <TextBlock Text="Enter the path to your games below and click the what type of game it is to get started" Margin="30" HorizontalAlignment="Center"/>
-        <TextBlock Text="Examples:&#x0a;Roms:C:\Path\To\Roms&#x0a;Steam: C:\Path To Steam\SteamApps\" Margin="30" HorizontalAlignment="Center"/>
+        <TextBlock Text="Examples:&#x0a;For Roms just put the path to directory, if you have multiple folders with roms then just put the top directory in and we will scan the subdirectories Example: C:\Path\To\Roms&#x0a;For Steam games put the path to your steamapps folder C:\Path To Steam\SteamApps\" Margin="30" HorizontalAlignment="Center"/>
         <TextBox Watermark="Enter the path to your games here" Name="Path" Width="400" Margin="40"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="256" Height="256" Background="#000" Click="Scan">
-                <Panel>
-                    <Image Name="Steam" Height="200"/>
-                    <TextBlock Text="Steam" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                </Panel>
-            </Button>
-			
-            <Border Width="30"/>
-			
-            <Button Width="256" Height="256" Background="#000" Click="Scan">
-                <Panel>
-                    <Image Name="Roms" Height="200"/>
-                    <TextBlock Text="Roms" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                </Panel>
-            </Button>
-        </StackPanel>
+        <Button Content="Start scanning!" Click="Scan"/>
     </StackPanel>
 </UserControl>

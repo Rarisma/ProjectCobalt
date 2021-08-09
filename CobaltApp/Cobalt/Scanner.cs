@@ -20,6 +20,7 @@ namespace CobaltApp.Cobalt
         private static int started;
         private static int Paused;
         private static int completed;
+        private static int FoundCount;
         private static int failed;
         private static int unidentified;
         private static List<string> InProgress = new();
@@ -96,7 +97,7 @@ namespace CobaltApp.Cobalt
                         }
                     }
                 }
-                found += name + "\nSteam\n" + appid + "\n";
+                found += name + "\nSteam\n" + appid + "\n \n";
             }
             return found;
         }
@@ -106,10 +107,10 @@ namespace CobaltApp.Cobalt
             if (!Loaded) {Init();}
             string Found = "";
             string[] Files = Directory.GetFiles(Path, "*", SearchOption.AllDirectories);
-            Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data// ");
+            Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data//");
             Parallel.ForEach(Files, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount }, File =>
             {
-                string hash = MD5Hasher(File);
+                string hash = Md5Hasher(File);
                 bool Identified = false;
                 foreach (List<string> Game in Database)
                 {
@@ -118,17 +119,19 @@ namespace CobaltApp.Cobalt
                         Identified = true;
                         Game.AddRange(Game);
                         Game.Add(File);
-                        foreach (string item in Game) {Found += item.Trim() + "\n";}
+                        foreach (string Item in Game) {Found += Item.Trim() + "\n";}
+                        Found += "\n";
                     }
                 }
 
                 if (Identified == false){unidentified++;}
 
-                Debug.WriteLine($"Started: {started}     Complete: {completed}    Total:  {{Files.Count}}     Failed: {failed}    Unidentified: {unidentified}");
+                Debug.WriteLine($"Started: {started}     Complete: {completed}    Total: {Files.Length}     Found: {FoundCount}    Open Threads: {Convert.ToInt32(started - (completed + failed))}      Failed: {failed}    Unidentified: {unidentified}");          
             });
             return Found;
         }
-        private static string MD5Hasher(string fileName)
+        
+        private static string Md5Hasher(string fileName)
         {
             InProgress.Add(fileName);
             try

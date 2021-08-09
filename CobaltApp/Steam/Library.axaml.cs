@@ -19,6 +19,7 @@ namespace CobaltApp.Steam
         public Library()    
         {
             AvaloniaXamlLoader.Load(this);
+            Cobalt.Library.Init();
 
             foreach (var Game in Cobalt.Library.Installed)
             {
@@ -121,7 +122,7 @@ namespace CobaltApp.Steam
         
         private void OpenScanner(object? sender, RoutedEventArgs e)
         {
-            Global.Data.Display.Content = new Cobalt.Scanner();
+            Global.Data.Display.Content = new Scanner();
         }
         
         private void Play(object? sender, RoutedEventArgs e)
