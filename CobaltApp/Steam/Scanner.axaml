@@ -11,7 +11,7 @@
         <TextBlock Text="Examples:&#x0a;Roms:C:\Path\To\Roms&#x0a;Steam: C:\Path To Steam\SteamApps\" Margin="30" HorizontalAlignment="Center"/>
         <TextBox Watermark="Enter the path to your games here" Name="Path" Width="400" Margin="40"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="256" Height="256" Background="#000">
+            <Button Width="256" Height="256" Background="#000" Click="Scan">
                 <Panel>
                     <Image Name="Steam" Height="200"/>
                     <TextBlock Text="Steam" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
@@ -20,7 +20,7 @@
 			
             <Border Width="30"/>
 			
-            <Button Width="256" Height="256" Background="#000" >
+            <Button Width="256" Height="256" Background="#000" Click="Scan">
                 <Panel>
                     <Image Name="Roms" Height="200"/>
                     <TextBlock Text="Roms" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>

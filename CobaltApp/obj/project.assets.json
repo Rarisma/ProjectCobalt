@@ -4047,11 +4047,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rarisma/RiderProjects/CobaltApp/CobaltApp.csproj",
+      "projectUniqueName": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/CobaltApp.csproj",
       "projectName": "CobaltApp",
-      "projectPath": "/home/rarisma/RiderProjects/CobaltApp/CobaltApp.csproj",
+      "projectPath": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/CobaltApp.csproj",
       "packagesPath": "/home/rarisma/.nuget/packages/",
-      "outputPath": "/home/rarisma/RiderProjects/CobaltApp/obj/",
+      "outputPath": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/rarisma/.nuget/NuGet/NuGet.Config"

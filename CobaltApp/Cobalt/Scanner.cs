@@ -106,7 +106,7 @@ namespace CobaltApp.Cobalt
             if (!Loaded) {Init();}
             string Found = "";
             string[] Files = Directory.GetFiles(Path, "*", SearchOption.AllDirectories);
-            Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data//");
+            Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data// ");
             Parallel.ForEach(Files, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount }, File =>
             {
                 string hash = MD5Hasher(File);

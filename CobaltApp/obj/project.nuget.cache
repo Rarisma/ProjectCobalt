@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GRanO2X38f2+X+js41Xd+fGvCcVwH6JKcflHYPuIEvnAihFdEtFd1gy8Mhj4NQHq9curLE7LlMnqkMWJuZTIbQ==",
+  "dgSpecHash": "zipxMKk1QeZSHUxDPXiTxh+LWGfwDEQVY98d3IzNGXKQAR3bc5snmL05UnPz19rebDvelI7/BgUv7lh+rKULmw==",
   "success": true,
-  "projectFilePath": "/home/rarisma/RiderProjects/CobaltApp/CobaltApp.csproj",
+  "projectFilePath": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/CobaltApp.csproj",
   "expectedPackageFiles": [
     "/home/rarisma/.nuget/packages/avalonia/0.10.3/avalonia.0.10.3.nupkg.sha512",
     "/home/rarisma/.nuget/packages/avalonia.angle.windows.natives/2.1.0.2020091801/avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",
