@@ -117,7 +117,6 @@ namespace CobaltApp.Cobalt
                     if (hash.ToUpper() == Game[3].ToUpper() && hash != "ERROR")
                     {
                         Identified = true;
-                        Game.AddRange(Game);
                         Game.Add(File);
                         foreach (string Item in Game) {Found += Item.Trim() + "\n";}
                         Found += "\n";
