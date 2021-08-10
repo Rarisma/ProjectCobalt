@@ -45,8 +45,7 @@ namespace CobaltApp
                 return;
             }
 
-            if (File.Exists(Global.Paths.Data +
-                            "Library.db")) //Will open to the library page if user has scanned games before
+            if (File.Exists(Global.Paths.Data + "Library.db")) //Will open to the library page if user has scanned games before
             {
                 //this.Find<ContentControl>("Display").Content = new SupernovaUI.Main();
                 this.Find<ContentControl>("Display").Content = new Steam.Library();

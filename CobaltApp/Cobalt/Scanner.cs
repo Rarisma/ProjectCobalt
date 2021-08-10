@@ -107,6 +107,7 @@ namespace CobaltApp.Cobalt
         {
             if (!Loaded) {Init();}
             string Found = "";
+            List<List<String>> foundList = new();
             string[] Files = Directory.GetFiles(Path, "*", SearchOption.AllDirectories);
             Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data//");
             Parallel.ForEach(Files, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount }, File =>
@@ -119,8 +120,8 @@ namespace CobaltApp.Cobalt
                     {
                         Identified = true;
                         Game.Add(File);
-                        foreach (string Item in Game) {Found += Item.Trim() + "\n";}
-                        Found += "\n";
+                        foundList.Add(Game);
+
                     }
                 }
 
@@ -128,6 +129,14 @@ namespace CobaltApp.Cobalt
 
                 Debug.WriteLine($"Started: {started}     Complete: {completed}    Total: {Files.Length}     Found: {FoundCount}    Open Threads: {Convert.ToInt32(started - (completed + failed))}      Failed: {failed}    Unidentified: {unidentified}");          
             });
+
+
+            foreach (var game in foundList)
+            {
+                foreach (string Item in game) {Found += Item.Trim() + "\n";}
+                Found += "\n";
+            }
+            
             return Found;
         }
         

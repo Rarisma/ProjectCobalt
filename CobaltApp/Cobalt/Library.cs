@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Threading;
+
 //I'm the code landlord you're a damned fraud!
 //look at these across my projects, is this character development?
 //(create a repo that is the same name as your github account eg i'd make a repo called rarisma)
@@ -47,9 +49,21 @@ namespace CobaltApp.Cobalt
             List<List<string>> templist = new();
             foreach (var Game in Installed)
             {
-                if (Game.Count > 1)
+                if (Game.Count > 1 && Game.Count <= 9) //Makes sure entries arent too small
                 {
                     templist.Add(Game);
+                }
+
+                if (templist.Last().Count == 9) //fixes wierd glitch on linux
+                {
+                    if (File.Exists(templist.Last().Last()))
+                    {
+                        templist.Last().Remove(templist.Last()[^2]);
+                    }
+                    else
+                    {
+                        templist.Last().Remove(templist.Last().Last());
+                    }
                 }
             }
             Installed = templist;
