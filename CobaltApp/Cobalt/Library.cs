@@ -25,20 +25,34 @@ namespace CobaltApp.Cobalt
             //Cleans each name, eg removes stuff like (USA) and [b]
             foreach (var Game in Installed)
             {
-                if (Game[0].Contains('(') || Game[0].Contains('['))
+                if (Game.Count >= 2) //Prevents crash if scanner adds an extra line at the end
                 {
-                    string constructed = "";
-                    bool Disabled = false;
-                    foreach (var Letter in Game[0])
+                    if (Game[0].Contains('(') || Game[0].Contains('['))
                     {
-                        if (Letter is '(' or '[') { Disabled = true; }
-                        else if (Letter is ')' or ']') { Disabled = false; }
-                        else if (Disabled == false)    { constructed += Letter;}
+                        string constructed = "";
+                        bool Disabled = false;
+                        foreach (var Letter in Game[0])
+                        {
+                            if (Letter is '(' or '[') { Disabled = true; }
+                            else if (Letter is ')' or ']') { Disabled = false; }
+                            else if (Disabled == false)    { constructed += Letter;}
+                        }
+                        Game[0] = constructed;
                     }
-                    Game[0] = constructed;
+                    Game[^2] = Game[^2].Trim(); //Cleans the platform as it tends to have weird spacing
                 }
-                Game[^2] = Game[^2].Trim(); //Cleans the platform as it tends to have weird spacing
             }
+            
+            //Makes sure install database doesn't have empty elements as this might crash later on
+            List<List<string>> templist = new();
+            foreach (var Game in Installed)
+            {
+                if (Game.Count > 1)
+                {
+                    templist.Add(Game);
+                }
+            }
+            Installed = templist;
         }
 
         public static void LaunchGame(List<string> Game)

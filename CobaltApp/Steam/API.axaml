@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CobaltApp.Steam.API">
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" Text="The keys for the IDGB API could not be found please enter them below."/>
+        <TextBox HorizontalContentAlignment="Center" Watermark="Client" Width="200" Name="Client"/>
+        <TextBox HorizontalAlignment="Center" Watermark="Secret" Width="200" Name="Secret"/>
+        <Button Content="Confirm" Click="Confirm"/>
+    </StackPanel>
+</UserControl>

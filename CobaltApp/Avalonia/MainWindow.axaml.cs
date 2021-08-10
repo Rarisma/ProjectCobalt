@@ -2,6 +2,7 @@ using System.IO;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace CobaltApp
 {
@@ -34,9 +35,14 @@ namespace CobaltApp
 
             Global.Data.Display = this.Find<ContentControl>("Display");
             //Just used for debugging
-            if (File.Exists(@"C:\Users\Rarisma\Desktop\API.txt"))
+            if (File.Exists(Global.Paths.Data + "//API.txt"))
             {
-                Global.Data.IGDBAPIKeys = File.ReadAllLines(@"C:\Users\Rarisma\Desktop\API.txt");
+                Global.Data.IGDBAPIKeys = File.ReadAllLines(Global.Paths.Data + "//API.txt");
+            }
+            else
+            {
+                Global.Data.Display.Content = new Steam.API();
+                return;
             }
 
             if (File.Exists(Global.Paths.Data +

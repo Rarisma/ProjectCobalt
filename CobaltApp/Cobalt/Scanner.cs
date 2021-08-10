@@ -34,8 +34,8 @@ namespace CobaltApp.Cobalt
             Loaded = true; //Prevents this from being ran multiple times since it takes aeons
             
             int complete = 0;
-            Parallel.ForEach(File.ReadLines(Global.Paths.Cache + "//Games.db"), Game =>
-            {
+            Parallel.ForEach(File.ReadLines(Global.Paths.Cache + "//Games.db"), Game => //Processes database, should be refined to be quicker at some point IE
+            { //This is already done and the file just has to be read like a library file, this didn't work last time and is why the project is in Avalonia instead of WinUI3 because this is way faster for some reason
                 System.Diagnostics.Debug.WriteLine("Processing database (" + complete + ")");
 
                 string Name = "";
@@ -66,6 +66,7 @@ namespace CobaltApp.Cobalt
             string Found = "";
             Found += Steam(path) + Roms(path);
             File.AppendAllText(Global.Paths.Data + "Library.db", Found);
+            Global.Data.Display = new Steam.Library();
 
         }
         
