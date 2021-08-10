@@ -3,9 +3,9 @@ A front end written in C# that aims to make emulation easier and quicker while p
 
 
 # What is Project Cobalt
-Project Cobalt is an unnamed front end written in C# and using the WinUI3 GUI Framework (For now) which aims to unify all your game librarys, saves and rom collections. Other features are planned however these may not be feasable and may be removed and changed at any time.
+Project Cobalt is a front end written in C# and using the AvaloniaUI Framework which aims to unify all your Game librarys, saves and rom collections. Other features are planned however these may not be feasable and may be removed and changed at any time.
 
-**ProjectCobalt is currently in Pre-Alpha and you are not recomened to use it if you want a smooth experience.**
+**ProjectCobalt is currently in Alpha and builds may be unstable.**
 
 
 #### Compiling
