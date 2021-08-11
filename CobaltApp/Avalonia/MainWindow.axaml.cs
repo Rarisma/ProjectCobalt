@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.IO;
 using Avalonia;
 using Avalonia.Controls;
@@ -11,7 +12,9 @@ namespace CobaltApp
         public MainWindow()
         {
             AvaloniaXamlLoader.Load(this);
-
+            Debug.WriteLine("Project Cobalt by Rarisma.");
+            Debug.WriteLine("Running on: " + Global.Data.Platforms);
+            
             if (!File.Exists(Global.Paths.Cache + "//Images//System//Loading.png"))
             {
                 LibRarisma.Connectivity.DownloadFile(

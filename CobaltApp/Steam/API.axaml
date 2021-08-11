@@ -4,10 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CobaltApp.Steam.API">
-    <StackPanel>
-        <TextBlock HorizontalAlignment="Center" Text="The keys for the IDGB API could not be found please enter them below."/>
-        <TextBox HorizontalContentAlignment="Center" Watermark="Client" Width="200" Name="Client"/>
-        <TextBox HorizontalAlignment="Center" Watermark="Secret" Width="200" Name="Secret"/>
-        <Button Content="Confirm" Click="Confirm"/>
+    <StackPanel Background="#1D2228">
+        <Border Height="200"/>
+        <TextBlock HorizontalAlignment="Center" Text="The keys for the IDGB API could not be found please enter them below." FontSize="20" TextWrapping="Wrap"/>
+        <TextBox HorizontalContentAlignment="Center" Watermark="Client" Width="600" Name="Client" Margin="20"/>
+        <TextBox HorizontalContentAlignment="Center" Watermark="Secret" Width="600" Name="Secret" Margin="20"/>
+        <Button Content="Confirm" Click="Confirm" HorizontalAlignment="Center"/>
     </StackPanel>
 </UserControl>

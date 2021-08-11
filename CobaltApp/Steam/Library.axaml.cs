@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -136,7 +137,19 @@ namespace CobaltApp.Steam
                 }
             }            
             Cobalt.Library.LaunchGame(SelectedGame);
-            Cobalt.Library.LaunchGame(SelectedGame);
+        }
+
+        private void RandomGame(object? sender, RoutedEventArgs e)
+        {
+            List<string> Selection = new();
+            foreach (var VARIABLE in Cobalt.Library.Installed)
+            {
+                if (VARIABLE[^2] == this.Find<ComboBox>("PlatformsSelect").SelectedItem.ToString())
+                {
+                    Selection.Add(VARIABLE.First());
+                }
+            }
+            this.Find<ListBox>("GameList").SelectedIndex = new Random().Next(0, Selection.Count);
         }
         
     }

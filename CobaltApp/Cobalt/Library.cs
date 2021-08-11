@@ -3,8 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading;
-
-//I'm the code landlord you're a damned fraud!
 //look at these across my projects, is this character development?
 //(create a repo that is the same name as your github account eg i'd make a repo called rarisma)
 namespace CobaltApp.Cobalt

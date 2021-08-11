@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-
+//Is github autopilot gonna put you out of job
+//If you can read this then yeah probably at some point
 namespace CobaltApp.Cobalt
 {
     public class Emulation

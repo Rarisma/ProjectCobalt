@@ -78,6 +78,7 @@
 		<StackPanel Grid.Row="2" Background="#1D2228" Orientation="Horizontal" Grid.ColumnSpan="3">
 			<Button  Content="+ ADD GAME"	Background="#1D2228" FontSize="12"	HorizontalAlignment="Center" Click="OpenScanner"/>
 			<TextBlock Text="XX Games" Name="Gamecount" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,0"/>
+			<Button Content="Pick a Random game" Click="RandomGame"/>
 		</StackPanel>
 	</Grid>
 </UserControl>

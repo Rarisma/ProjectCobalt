@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using SkiaSharp;
 
-//Tales from the code zone - volume 2: Tha Code Villain
 //Had to rewrite this because apparently the other isn't linux friendly
 //As of now I am trying to not use windows at all.
 namespace CobaltApp.Cobalt

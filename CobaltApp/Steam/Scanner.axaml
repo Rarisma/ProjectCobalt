@@ -4,12 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CobaltApp.Steam.Scanner">
-    <StackPanel >
+    <StackPanel Background="#1D2228">
         <TextBlock Text="Welcome to Project Cobalt" FontSize="40" Padding="20" HorizontalAlignment="Center"/>
 		
         <TextBlock Text="Enter the path to your games below and click the what type of game it is to get started" Margin="30" HorizontalAlignment="Center"/>
-        <TextBlock Text="Examples:&#x0a;For Roms just put the path to directory, if you have multiple folders with roms then just put the top directory in and we will scan the subdirectories Example: C:\Path\To\Roms&#x0a;For Steam games put the path to your steamapps folder C:\Path To Steam\SteamApps\" Margin="30" HorizontalAlignment="Center"/>
+        <TextBlock FontSize="20" Text="Examples:&#x0a;For Roms just put the path to directory Example: C:\Path\To\Roms&#x0a;For Steam games put the path to your steamapps folder C:\Path To Steam\SteamApps\" Margin="30" HorizontalAlignment="Center" TextAlignment="Center"/>
         <TextBox Watermark="Enter the path to your games here" Name="Path" Width="400" Margin="40"/>
-        <Button Content="Start scanning!" Click="Scan"/>
+        <Button Content="Start scanning!" Click="Scan" HorizontalAlignment="Center"/>
     </StackPanel>
 </UserControl>
