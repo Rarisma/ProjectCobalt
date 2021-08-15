@@ -3,12 +3,15 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading;
+using IGDB;
+using IGDB.Models;
 //look at these across my projects, is this character development?
 //(create a repo that is the same name as your github account eg i'd make a repo called rarisma)
 namespace CobaltApp.Cobalt
 {
     class Library //Simplifies implantation of library across skins
     {
+        static IGDBClient igdb = new IGDBClient(Global.Data.IGDBAPIKeys[0], Global.Data.IGDBAPIKeys[1]);
         public static List<List<string>> Installed = new();
 
         public static void Init() //Called when first opened
@@ -81,7 +84,50 @@ namespace CobaltApp.Cobalt
                 Emulation.RunGame(Game);
             }
         }
-        
 
+        public static async void GetInfo(string GameTitle)
+        {
+            List<string> DataFile = new();
+            Debug.WriteLine("Looking for: " + GameTitle);
+            DataFile.Add("Revision " + Global.Data.DataFileVer);
+            var Results = await igdb.QueryAsync<Game>(IGDB.IGDBClient.Endpoints.Games, query: "fields age_ratings.rating,cover.*,category,cover,dlcs,franchise,genres,player_perspectives,platforms,storyline,name,screenshots.*,summary; search  \"" + GameTitle + "\";");
+            if (Results.Length != 0)
+            {
+                try
+                {
+                    DataFile.Add(new string(Results.First().Summary.Where(c => !char.IsControl(c)).ToArray()));
+                }
+                catch
+                {
+                    DataFile.Add("This game doesn't seem to have a description");
+                }
+                
+                try
+                {
+                    DataFile.Add("Rating: " +  Results.First().AgeRatings.Values);
+                }
+                catch
+                {
+                    DataFile.Add("Rating:  ?");
+                }
+                
+                try
+                {
+                    DataFile.Add(Results.First().Genres.Values.ToString());
+                }
+                catch
+                {
+                    DataFile.Add("This game doesn't seem to have any defined genres");
+                }
+            }
+            else
+            {
+                DataFile.Add("ERROR - No data found");
+            }
+            
+            Directory.CreateDirectory(Global.Paths.Data + "//InfoFiles//");
+            System.IO.File.WriteAllLines(Global.Paths.Data + "//InfoFiles//" + GameTitle, DataFile);
+        }
+        
     }
 }

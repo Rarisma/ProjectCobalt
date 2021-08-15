@@ -8,14 +8,15 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
 using IGDB;
 using IGDB.Models;
-
+//The ultra one hundred a lotto where you gotta get all 100 numbers to get the jackpot
+//Jackpot is 700 Billion USD
 namespace CobaltApp.Steam
 {
     public class Library : UserControl
     {
         List<string> Titles = new();
         List<string> Platforms = new List<string>() {"All platforms"};
-        IGDBClient igdb = new IGDBClient(Global.Data.IGDBAPIKeys[0], Global.Data.IGDBAPIKeys[1]);
+        static IGDBClient igdb = new IGDBClient(Global.Data.IGDBAPIKeys[0], Global.Data.IGDBAPIKeys[1]);
 
         public Library()    
         {
@@ -151,6 +152,17 @@ namespace CobaltApp.Steam
             }
             this.Find<ListBox>("GameList").SelectedIndex = new Random().Next(0, Selection.Count);
         }
+
+        //Scans and gets all info on a game
+        private void Preload(object? sender, RoutedEventArgs e)
+        {
+            foreach (var Game in Cobalt.Library.Installed)
+            {
+                Cobalt.Library.GetInfo(Game.First());
+            }
+        }
+
+        
         
     }
 }

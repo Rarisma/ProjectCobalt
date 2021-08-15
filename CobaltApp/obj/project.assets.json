@@ -290,7 +290,7 @@
           "lib/netstandard1.0/JetBrains.Annotations.dll": {}
         }
       },
-      "LibRarisma/2.0.2": {
+      "LibRarisma/2.0.3": {
         "type": "package",
         "compile": {
           "lib/net5.0/LibRarisma.dll": {}
@@ -1534,15 +1534,15 @@
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.xml"
       ]
     },
-    "LibRarisma/2.0.2": {
-      "sha512": "uSisj9cJeVMwva7rSoZZIYxBD54LXqkkhjEF/4R4afSezW7wh20T/Lab6U424WNNALRv43lSKX11GNRjp+YpEA==",
+    "LibRarisma/2.0.3": {
+      "sha512": "yMxEsrk0xPWWokhzfCamtZ7wej/4nXHZ5v77IbwG/kSXRgz9PO8B86LWFDKNTx3JCAlsvLYaLn8MA1Crd/eUfg==",
       "type": "package",
-      "path": "librarisma/2.0.2",
+      "path": "librarisma/2.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/LibRarisma.dll",
-        "librarisma.2.0.2.nupkg.sha512",
+        "librarisma.2.0.3.nupkg.sha512",
         "librarisma.nuspec"
       ]
     },
@@ -4038,7 +4038,7 @@
       "Avalonia.Desktop >= 0.10.3",
       "Avalonia.Diagnostics >= 0.10.3",
       "IGDB >= 2.0.1",
-      "LibRarisma >= 2.0.2"
+      "LibRarisma >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -4096,7 +4096,7 @@
           },
           "LibRarisma": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "[2.0.3, )"
           }
         },
         "imports": [
@@ -4114,7 +4114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
