@@ -22,9 +22,9 @@ namespace CobaltApp.Steam
             Cobalt.Scanner.Scan(this.Find<TextBox>("Path").Text);
         }
 
-        private void CobaltScan(object? sender, RoutedEventArgs e)
+        private void CDBT(object? sender, RoutedEventArgs e)
         {
-            Database.NeonWorship(this.Find<TextBox>("Path").Text);
+            Global.Data.Display.Content = new DatabaseTool();
         }
     }
 }

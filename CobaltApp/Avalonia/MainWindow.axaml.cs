@@ -3,6 +3,7 @@ using System.IO;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using CobaltApp.Steam;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace CobaltApp
@@ -35,7 +36,8 @@ namespace CobaltApp
                     "https://raw.githubusercontent.com/Rarisma/ProjectCobalt/main/Resources/Error2.png",
                     Global.Paths.Cache + "//Images//System//", "Error2.png");
             }
-
+            
+            Cobalt.Database.Load();
             Global.Data.Display = this.Find<ContentControl>("Display");
             //Just used for debugging
             if (File.Exists(Global.Paths.Data + "//API.txt"))

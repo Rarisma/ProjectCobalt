@@ -24,7 +24,7 @@ namespace CobaltApp.Cobalt
         private static int failed;
         private static int unidentified;
         private static List<string> InProgress = new();
-        private static void Init() //loads the rom lists
+        public static void Init() //loads the rom lists
         {
             if (!File.Exists(AppDomain.CurrentDomain.BaseDirectory + "//Cache//Games.db"))
             {
@@ -57,10 +57,10 @@ namespace CobaltApp.Cobalt
                 Database.Add(new List<string> { Name, Size, CRC, MD5, Sha1, Serial, platform });
                 complete++;
             });
-            Loaded = true; //Prevents this from being ran multiple times since it takes aeons
+            Debug.WriteLine($"Loaded oldDB - Contains {Database.Count}");
         }
 
-        public static void Scan(string path)
+            public static void Scan(string path)
         {
             string Found = "";
             Found += WiiScanner(path) + Steam(path) + Roms(path);

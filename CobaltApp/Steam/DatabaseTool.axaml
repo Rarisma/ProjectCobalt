@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CobaltApp.Steam.DatabaseTool">
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" FontSize="25" TextWrapping="Wrap" Text="WARNING! This tool is not maintained and is not intended to be used by an end user, this tool creates game databases. If you have an Datafile or database of future games send it to Rarisma so they can include it in the offical Database. It may take several hours for to complete depending on the operation."/>
+        <Border Height="200"/>
+        <TextBlock Text="Cobalt Database Tool - Side B " FontSize="50"  HorizontalAlignment="Center"/>
+        <Border Height="20"/>
+        <TextBlock Text="Last updated August 18th 2021 by Rarisma" HorizontalAlignment="Center"/>
+        <Border Height="25"/>
+        <TextBox Watermark="Enter Directory" Name="Path" Width="200" HorizontalAlignment="Center"/>
+        <Border Height="20"/>
+        <ComboBox Name="Interface" Width="200" HorizontalAlignment="Center">
+            <ComboBoxItem Content="Create WRSHP Database (RIZMA - Slow)"></ComboBoxItem>
+            <ComboBoxItem Content="Create WRSHP Database (Quick - May be Buggy)"></ComboBoxItem>
+            <ComboBoxItem Content="Convert RIZMA to WRSHP Database"></ComboBoxItem>
+            <ComboBoxItem Content="Reload database" />
+        </ComboBox>
+        <Border Height="20"/>
+        <Button Content="Start" Click="Start" HorizontalAlignment="Center"/>
+        <Border Height="20"/>
+        <TextBlock Text="Check your debug console if possible for progress" Name="Console" Width="500" Height="200"  Background="#121212"/>
+    </StackPanel>
+</UserControl>
