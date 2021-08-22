@@ -21,6 +21,7 @@ namespace CobaltApp.Steam
         private void Confirm(object? sender, RoutedEventArgs e)
         {
             File.WriteAllLines(Global.Paths.Data + "//API.txt", new string[] {this.Find<TextBox>("Client").Text,this.Find<TextBox>("Secret").Text});
+            Global.Init.init();
         }
     }
 }

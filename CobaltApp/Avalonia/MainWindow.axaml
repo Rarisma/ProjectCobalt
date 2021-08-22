@@ -4,6 +4,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CobaltApp.MainWindow"
-        Title="Project Cobalt Alpha 0.1">
+        Title="Project Cobalt Alpha 0.2">
     <ContentControl Name="Display" />
 </Window>

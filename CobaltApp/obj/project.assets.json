@@ -4042,19 +4042,19 @@
     ]
   },
   "packageFolders": {
-    "/home/rarisma/.nuget/packages/": {}
+    "C:\\Users\\Rarisma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/CobaltApp.csproj",
+      "projectUniqueName": "D:\\Projects\\ProjectCobalt\\CobaltApp\\CobaltApp.csproj",
       "projectName": "CobaltApp",
-      "projectPath": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/CobaltApp.csproj",
-      "packagesPath": "/home/rarisma/.nuget/packages/",
-      "outputPath": "/home/rarisma/Documents/GitHub/ProjectCobalt/CobaltApp/obj/",
+      "projectPath": "D:\\Projects\\ProjectCobalt\\CobaltApp\\CobaltApp.csproj",
+      "packagesPath": "C:\\Users\\Rarisma\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\ProjectCobalt\\CobaltApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/rarisma/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Rarisma\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -4114,7 +4114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using CobaltApp.Global;
+using Microsoft.CodeAnalysis;
 
 //This is more of a debug tool, and shouldn't be really be used to build your own custom db
 //If the mainDB is missing games please either open a PR if you feel like doing it yourself or send me the dat file
@@ -170,6 +171,22 @@ namespace CobaltApp.Cobalt
                 if (Line == "") {DB.Add(new List<string>());}
                 else {DB.Last().Add(Line);}
             }
+
+            List<List<string>> FinalDB = new();
+            foreach (var VARIABLE in DB)
+            {
+                if (VARIABLE.Count == 0)
+                {
+                    
+                }
+                else
+                {
+                    FinalDB.Add(VARIABLE);
+                }
+            }
+
+            DB = FinalDB; 
+            
             Debug.WriteLine($"Loaded Worship Formatted Database\nContains {DB.Count}");
         }
         

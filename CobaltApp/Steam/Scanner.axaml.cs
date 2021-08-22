@@ -1,3 +1,4 @@
+using System.Drawing.Drawing2D;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -20,6 +21,7 @@ namespace CobaltApp.Steam
         private void Scan(object? sender, RoutedEventArgs e)
         {
             Cobalt.Scanner.Scan(this.Find<TextBox>("Path").Text);
+            Global.Init.init();
         }
 
         private void CDBT(object? sender, RoutedEventArgs e)
