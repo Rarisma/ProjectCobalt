@@ -15,14 +15,13 @@ namespace CobaltApp.Cobalt
 {
     public class Scanner
     {
-        private static bool Loaded = false;
-        private static int started;
-        private static int Paused;
-        private static int completed;
-        private static int FoundCount;
-        private static int failed;
-        private static int unidentified;
-        private static List<string> InProgress = new();
+        public static int started;
+        public static int completed;
+        public static int total;
+        public static int failed;
+        public static int unidentified;
+        public static List<string> InProgress = new();
+        public static bool ExitUI = false;
 
         public static void Scan(string path)
         {
@@ -71,6 +70,7 @@ namespace CobaltApp.Cobalt
             string Found = "";
             List<List<String>> foundList = new();
             string[] Files = Directory.GetFiles(Path, "*", SearchOption.AllDirectories);
+            total = Files.Length;
             Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "//Data//");
             Parallel.ForEach(Files, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount }, File =>
             {
@@ -89,7 +89,7 @@ namespace CobaltApp.Cobalt
 
                 if (Identified == false){unidentified++;}
 
-                Debug.WriteLine($"Started: {started}     Complete: {completed}    Total: {Files.Length}     Found: {foundList.Count}    Open Threads: {Convert.ToInt32(started - (completed + failed))}      Failed: {failed}    Unidentified: {unidentified}");          
+                //Debug.WriteLine($"Started: {started}     Complete: {completed}    Total: {Files.Length}     Found: {foundList.Count}    Open Threads: {Convert.ToInt32(started - (completed + failed))}      Failed: {failed}    Unidentified: {unidentified}");          
             });
 
 

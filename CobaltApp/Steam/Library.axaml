@@ -27,6 +27,13 @@
 				<Button Grid.Column="2" Content="LIBRARY"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
 				<Border Width="30"/>
 				<Button Grid.Column="4" Content="SETTINGS"	Background="#1D2228" FontSize="20"	HorizontalAlignment="Center"/>
+				<Border Width="30"/>
+				<DropDown SelectedIndex="0" VerticalAlignment="Center" Width="100">
+					<TextBlock Text="Tools" HorizontalAlignment="Center" />
+					<Button Content="Add more games to library" HorizontalAlignment="Center" Click="OpenScanner" Width="200" HorizontalContentAlignment="Center"/>
+					<Button Content="Pick a Random game" HorizontalAlignment="Center" Click="RandomGame" Width="200" HorizontalContentAlignment="Center"/>
+					<Button Content="Preload all game infomation" HorizontalAlignment="Center" Click="Preload" Width="200" HorizontalContentAlignment="Center"/>
+				</DropDown>
 			</StackPanel>
 		</Grid>
 		
@@ -75,11 +82,9 @@
 			</Grid>
 		</StackPanel>
 
-		<StackPanel Grid.Row="2" Background="#1D2228" Orientation="Horizontal" Grid.ColumnSpan="3">
+	<StackPanel Grid.Row="2" Background="#1D2228" Orientation="Horizontal" Grid.ColumnSpan="3">
 			<Button  Content="+ ADD GAME"	Background="#1D2228" FontSize="12"	HorizontalAlignment="Center" Click="OpenScanner"/>
 			<TextBlock Text="XX Games" Name="Gamecount" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,0"/>
-			<Button Content="Pick a Random game" Click="RandomGame"/>
-			<Button Content="Preload all games" Click="Preload"/>
-		</StackPanel>
+	</StackPanel>
 	</Grid>
 </UserControl>

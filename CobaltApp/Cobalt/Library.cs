@@ -85,6 +85,76 @@ namespace CobaltApp.Cobalt
             }
         }
 
+        public static async void getallInfo()
+        {
+            int count = 0;
+            Debug.WriteLine("Trying to get all data");
+            Directory.CreateDirectory(Global.Paths.Data + "//InfoFiles//");
+            foreach (var game in  Library.Installed)
+            {
+                var Results = await igdb.QueryAsync<Game>(IGDB.IGDBClient.Endpoints.Games, query: "fields age_ratings.rating,cover.*,category,cover,dlcs,franchise,genres,player_perspectives,platforms,storyline,name,screenshots.*,summary; search  \"" + game.First() + "\";");
+                List<string> DataFile = new();
+                
+                if (Results.Length != 0)
+                {
+                    try { DataFile.Add(new string(Results.First().Summary.Where(c => !char.IsControl(c)).ToArray())); }
+                    catch { DataFile.Add("NONE"); }
+                
+                    try { DataFile.Add("Rating: " +  Results.First().AgeRatings.Values); }
+                    catch { DataFile.Add("NONE"); }
+                
+                    try { DataFile.Add(Results.First().Genres.Values.ToString()); }
+                    catch { DataFile.Add("NONE"); }
+                
+                    try { DataFile.Add(Results.First().Franchise.Value.ToString()); }
+                    catch { DataFile.Add("NONE"); }
+                
+                    try
+                    {
+                        string screenshots = "";
+                        foreach (var VARIABLE in Results.First().Screenshots.Values)
+                        {
+                            screenshots += VARIABLE.Url + " , ";
+                        }
+                        DataFile.Add(screenshots);
+                    }
+                    catch
+                    {
+                        DataFile.Add("NONE");
+                    }
+                
+                    try
+                    {
+                        string art = "";
+                        foreach (var VARIABLE in Results.First().Artworks.Values)
+                        {
+                            art += VARIABLE.Url + " , ";
+                        }
+                        DataFile.Add(art);
+                    }
+                    catch
+                    {
+                        DataFile.Add("NONE");
+                    }
+                
+                    try { DataFile.Add(Results.First().Rating.Value.ToString()); }
+                    catch { DataFile.Add("NONE"); }
+            
+                
+                }
+                else
+                {
+                    DataFile.Add("ERROR - No data found");
+                }
+
+                await File.WriteAllLinesAsync(Global.Paths.Data + "//InfoFiles//" + game.First(), DataFile);
+                count++;
+                Debug.WriteLine(count + "/" + Installed.Count + "   " + Global.Paths.Data + "  //InfoFiles//" + game.First());
+            }
+            Debug.WriteLine("Got all data on games.");
+        }
+        
+        
         public static async void GetInfo(string GameTitle)
         {
             List<string> DataFile = new();
@@ -93,32 +163,50 @@ namespace CobaltApp.Cobalt
             var Results = await igdb.QueryAsync<Game>(IGDB.IGDBClient.Endpoints.Games, query: "fields age_ratings.rating,cover.*,category,cover,dlcs,franchise,genres,player_perspectives,platforms,storyline,name,screenshots.*,summary; search  \"" + GameTitle + "\";");
             if (Results.Length != 0)
             {
+                try { DataFile.Add(new string(Results.First().Summary.Where(c => !char.IsControl(c)).ToArray())); }
+                catch { DataFile.Add("NONE"); }
+                
+                try { DataFile.Add("Rating: " +  Results.First().AgeRatings.Values); }
+                catch { DataFile.Add("NONE"); }
+                
+                try { DataFile.Add(Results.First().Genres.Values.ToString()); }
+                catch { DataFile.Add("NONE"); }
+                
+                try { DataFile.Add(Results.First().Franchise.Value.ToString()); }
+                catch { DataFile.Add("NONE"); }
+                
                 try
                 {
-                    DataFile.Add(new string(Results.First().Summary.Where(c => !char.IsControl(c)).ToArray()));
+                    string screenshots = "";
+                    foreach (var VARIABLE in Results.First().Screenshots.Values)
+                    {
+                        screenshots += VARIABLE.Url + " , ";
+                    }
+                    DataFile.Add(screenshots);
                 }
                 catch
                 {
-                    DataFile.Add("This game doesn't seem to have a description");
+                    DataFile.Add("NONE");
                 }
                 
                 try
                 {
-                    DataFile.Add("Rating: " +  Results.First().AgeRatings.Values);
+                    string art = "";
+                    foreach (var VARIABLE in Results.First().Artworks.Values)
+                    {
+                        art += VARIABLE.Url + " , ";
+                    }
+                    DataFile.Add(art);
                 }
                 catch
                 {
-                    DataFile.Add("Rating:  ?");
+                    DataFile.Add("NONE");
                 }
                 
-                try
-                {
-                    DataFile.Add(Results.First().Genres.Values.ToString());
-                }
-                catch
-                {
-                    DataFile.Add("This game doesn't seem to have any defined genres");
-                }
+                try { DataFile.Add(Results.First().Rating.Value.ToString()); }
+                catch { DataFile.Add("NONE"); }
+            
+                
             }
             else
             {
@@ -126,7 +214,8 @@ namespace CobaltApp.Cobalt
             }
             
             Directory.CreateDirectory(Global.Paths.Data + "//InfoFiles//");
-            System.IO.File.WriteAllLines(Global.Paths.Data + "//InfoFiles//" + GameTitle, DataFile);
+            await File.WriteAllLinesAsync(Global.Paths.Data + "//InfoFiles//" + GameTitle, DataFile);
+            Debug.WriteLine("Finished writing: " + GameTitle);
         }
         
     }

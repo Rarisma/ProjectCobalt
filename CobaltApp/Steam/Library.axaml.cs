@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
@@ -156,10 +157,7 @@ namespace CobaltApp.Steam
         //Scans and gets all info on a game
         private void Preload(object? sender, RoutedEventArgs e)
         {
-            foreach (var Game in Cobalt.Library.Installed)
-            {
-                Cobalt.Library.GetInfo(Game.First());
-            }
+            Cobalt.Library.getallInfo();
         }
 
         

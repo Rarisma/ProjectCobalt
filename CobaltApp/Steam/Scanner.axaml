@@ -11,6 +11,8 @@
         <TextBlock FontSize="20" Text="Examples:&#x0a;For Roms just put the path to directory Example: C:\Path\To\Roms&#x0a;For Steam games put the path to your steamapps folder C:\Path To Steam\SteamApps\" Margin="30" HorizontalAlignment="Center" TextAlignment="Center"/>
         <TextBox Watermark="Enter the path to your games here" Name="Path" Width="400" Margin="40"/>
         <Button Content="Start scanning!" Click="Scan" HorizontalAlignment="Center"/>
+        <Border Height="50"/>
+        <TextBlock Text="" Name="Status" HorizontalAlignment="Center"/>
         <Border Height="550"/>
         <Button Content="Open DB tool" Click="CDBT" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Background="#1D2228"/>
     </StackPanel>
