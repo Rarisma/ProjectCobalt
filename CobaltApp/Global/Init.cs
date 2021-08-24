@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using CobaltApp.Cobalt;
 
 //This controls the stuff that starts at launch
 namespace CobaltApp.Global
@@ -36,7 +37,13 @@ namespace CobaltApp.Global
                 return; //Prevents a crash, once the library is made this function is ran again
 
             }
-
+            
+            //Checks if Assets folder doesn't exist
+            if (!Directory.Exists(Paths.Assets))
+            {
+                LibRarisma.Connectivity.DownloadFile("https://github.com/Rarisma/ProjectCobalt/blob/main/Resources/Assets/Assets.zip?raw=true",Paths.Assets,"Assets.zip", true);
+            }
+            
             //Finally load the library page
             Data.Display.Content = new Steam.Library();
 

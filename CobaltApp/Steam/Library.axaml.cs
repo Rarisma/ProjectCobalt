@@ -67,7 +67,7 @@ namespace CobaltApp.Steam
         
         private void ListboxUpdate(object? sender, SelectionChangedEventArgs e)
         {
-            this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Cache + "//Images//System//Loading.png");
+            this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Assets + "//Loading.png");
             try
             {
                 getimage(this.Find<ListBox>("GameList").SelectedItem.ToString());
@@ -85,16 +85,16 @@ namespace CobaltApp.Steam
             {
                 try
                 {
-                    if (!File.Exists(Global.Paths.Cache + "//Images//" + Name + ".jpg"))
+                    if (!File.Exists(Global.Paths.Assets + Name + ".jpg"))
                     {
                         var URL = "https:" + Results.First().Cover.Value.Url.Replace("t_thumb", "t_1080p");
-                        LibRarisma.Connectivity.DownloadFile(URL, Global.Paths.Cache + "//Images//", Name + ".jpg");
+                        LibRarisma.Connectivity.DownloadFile(URL, Global.Paths.Assets + "//", Name + ".jpg");
                     }
-                    this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Cache + "//Images//" + Name + ".jpg");
+                    this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Assets + Name + ".jpg");
                 }
                 catch
                 {
-                    this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Cache + "//Images//System//Error2.png");
+                    this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Assets + "//Error2.png");
                 }
 
                 try
@@ -109,7 +109,7 @@ namespace CobaltApp.Steam
             }
             else
             {
-                this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Cache + "//Images//System//Error.png");
+                this.Find<Image>("Background").Source = new Bitmap(Global.Paths.Assets + "//Error.png");
             }
             
 
@@ -155,10 +155,7 @@ namespace CobaltApp.Steam
         }
 
         //Scans and gets all info on a game
-        private void Preload(object? sender, RoutedEventArgs e)
-        {
-            Cobalt.Library.getallInfo();
-        }
+        private void Preload(object? sender, RoutedEventArgs e) { Cobalt.Library.getallInfo(); }
 
         
         

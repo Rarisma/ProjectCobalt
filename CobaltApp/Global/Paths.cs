@@ -10,5 +10,6 @@ namespace CobaltApp.Global
         public static string Cache = AppDomain.CurrentDomain.BaseDirectory + "//Cache//";
         public static string Emulators = AppDomain.CurrentDomain.BaseDirectory + "//Emulators//";
         public static string Data = AppDomain.CurrentDomain.BaseDirectory + "//Data//";
+        public static string Assets = AppDomain.CurrentDomain.BaseDirectory + "//Assets//";
     }
 }
