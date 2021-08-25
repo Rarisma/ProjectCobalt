@@ -61,6 +61,8 @@
 				<Border Width="20"/>
 				<TextBlock Text="PLAY TIME:&#x0a;XX:XX" Padding="80,0,20,0"/>
 				<TextBlock Text="ACHIEVEMENTS&#x0a;0/0" Padding="80,0,20,0"/>
+				<Image Name="AgeRating" Width="100" Height="200"/>
+
 			</StackPanel>
 			<Border Height="50"/>
 			<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="500">

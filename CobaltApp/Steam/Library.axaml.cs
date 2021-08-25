@@ -106,6 +106,11 @@ namespace CobaltApp.Steam
                     this.Find<TextBlock>("Desc").Text = "There was an error loading the description for this game\nMaybe it doesn't exist.";
                 }
 
+                try
+                {
+                    this.Find<Image>("AgeRating").Source = new Bitmap()
+                }
+                
             }
             else
             {
